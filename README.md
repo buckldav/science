@@ -1,68 +1,42 @@
-# Astro Starter Kit: Blog
+# science
 
-```sh
-npm create astro@latest -- --template blog
+[![SpringMicroHost Badge](https://img.shields.io/badge/Built%20by-springmicrohost-4f70ce.svg)](https://springmicrohost.com)
+
+This [Astro](https://astro.build/) project was generated with `@springmicro/cli` using the [Astro Starter Kit: Blog](https://github.com/withastro/astro/tree/main/examples/blog) template with some modifications.
+
+```bash
+npm i -g @springmicro/cli
+springmicro init astro -n science
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## Features
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [tailwindcss](https://tailwindcss.com/) for CSS classes and theming.
+- [shadcn/ui](https://ui.shadcn.com/) for plug-and-play React components.
+- [Content Collections](https://docs.astro.build/en/guides/content-collections/) for blogs, newsletters, whatever you'd like.
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+## Development
 
-Features:
+Install [pnpm](https://pnpm.io/) if you haven't already.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+<details>
+<summary>Why pnpm?</summary>
+It's a preference of SpringMicroHost. It mostly boils down to faster install times and better dependency management. `@springmicro/cli` commands only support pnpm so far.
+</details>
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+```bash
+pnpm install
+pnpm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Adding SpringMicro packages
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+springmicro add auth
+```
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+## Learn more
 
-Any static assets, like images, can be placed in the `public/` directory.
+Check out [our documentation](https://docs.springmicrohost.com).
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+`#ff9800`

@@ -1,0 +1,212 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import {
+  TypographyH1,
+  TypographyH3,
+  TypographyH4,
+  TypographyH5,
+  TypographyP,
+} from "@/components/ui/typography";
+import Footer from "../components/Footer.astro";
+import { CollectionEntry } from "astro:content";
+// const title = "Disclosure";
+// const description = "Disclosure";
+type Props = CollectionEntry<"disclosure">["data"];
+
+const { title, description, fees, fieldWork } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      th,
+      td {
+        text-align: center;
+      }
+      td {
+        text-wrap: no-wrap;
+        font-size: 0.75rem;
+      }
+      body {
+        --tw-prose-headings: 0 0 0%;
+      }
+      @media print {
+        body {
+          background: white;
+        }
+
+        /* h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+          color: #000 !important;
+        } */
+
+        /* Reset margins and padding */
+        @page {
+          margin: 0;
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          transform: scale(1); /* Default scale */
+          transform-origin: top left;
+          font-size: 10pt;
+        }
+
+        h1 {
+          margin-top: 0 !important;
+        }
+      }
+    </style>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <main class="container-lg prose dark:prose-invert content">
+      <TypographyH1 classes={["text-center", "mb-0"]}>
+        {title}
+      </TypographyH1>
+      <TypographyP classes={["text-center"]}>
+        {description}
+        <br />
+        <span
+          >Mr. David Buckley&emsp;&emsp;<a
+            href="mailto:david.buckley@meritacademy.org"
+            >david.buckley@meritacademy.org</a
+          >&emsp;&emsp;Room 223A</span
+        >
+      </TypographyP>
+      <slot />
+      <TypographyH3>Grading</TypographyH3>
+      <TypographyP
+        >This class adheres to the letter grading scale adopted here at Merit
+        Academy.
+      </TypographyP>
+      <table>
+        <tbody>
+          <tr>
+            <th>A</th>
+            <th>A-</th>
+            <th>B+</th>
+            <th>B</th>
+            <th>B-</th>
+            <th>C+</th>
+            <th>C</th>
+            <th>C-</th>
+            <th>D+</th>
+            <th>D</th>
+            <th>D-</th>
+            <th>F</th>
+          </tr>
+          <tr>
+            <td>100-93</td>
+            <td>92-90</td>
+            <td>89-87</td>
+            <td>86-83</td>
+            <td>82-80</td>
+            <td>79-77</td>
+            <td>76-73</td>
+            <td>72-70</td>
+            <td>69-67</td>
+            <td>66-63</td>
+            <td>62-60</td>
+            <td>59-0</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>Labs, Projects, and Tests = 80% of grade</li>
+        <li>All Other Formative Assignments = 20% of grade</li>
+      </ul>
+      <TypographyH4> Late Work and Resubmissions </TypographyH4>
+      <ul>
+        <li>
+          There will be time to make up assignments at the end of each unit.
+          Please use this time. There will be no penalty for late assignments or
+          assignment resubmissions.
+        </li>
+        <li>
+          However, <em>tests are non-retakable</em> unless special circumstances
+          require it (If you are absent on test day, you can take the test on a different
+          day. Testing accommodations in student's IEP still apply). Doing assignments
+          promptly will properly prepare you for tests.
+        </li>
+        <li>
+          <em>Tests will be open notes.</em>
+        </li>
+      </ul>
+
+      <TypographyH3>Behavior Expectations</TypographyH3>
+      <ul>
+        <li>
+          All policies found at <a
+            href="https://www.meritprepacademy.org/policies"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://www.meritprepacademy.org/policies</a
+          > will be honored. A notable change across Merit this year is the phones
+          and electronics policy, where phones must be out of sight and silent during
+          class. Zero-tolerance.
+        </li>
+        <li>
+          Hall pass usage is now tracked school-wide. Be honest about what you
+          need (bathroom, locker, etc.).
+        </li>
+        <li>Classroom Values</li>
+        <ol>
+          <li>
+            <strong>Spirit</strong> - Exemplify high character, respect, and love.
+          </li>
+          <li>
+            <strong>Opportunity</strong> - Seize the moment to try new things.
+          </li>
+          <li>
+            <strong>Curiosity</strong> - Engage in scientific inquiry with child-like
+            wonder.
+          </li>
+
+          <li>
+            <strong>Perseverance</strong> - Be resilient and finish strong!
+          </li>
+        </ol>
+      </ul>
+      <TypographyH3> Course Fees </TypographyH3>
+      <TypographyP>{fees}</TypographyP>
+      <TypographyH4>Optional Field Work</TypographyH4>
+      <TypographyP
+        >Part of the student experience at Merit Academy is field work, where
+        students have meaningful learning experiences outside the class room.
+        These are optional experiences and the dates are to be determined.</TypographyP
+      >
+      {
+        fieldWork.map((item) => (
+          <div>
+            <TypographyH5>
+              {item.website ? (
+                <a
+                  href={item.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.location}
+                </a>
+              ) : (
+                item.location
+              )}
+            </TypographyH5>
+            <p class="text-xs">{item.fee}</p>
+            <p class="text-xs">{item.motivation}</p>
+          </div>
+        ))
+      }
+    </main>
+
+    <Footer />
+  </body>
+</html>

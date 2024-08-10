@@ -1,0 +1,11 @@
+---
+import DisclosureDoc from "@/layouts/DisclosureDoc.astro";
+import { getEntryBySlug } from "astro:content";
+const entry = await getEntryBySlug("disclosure", "earth-systems");
+const docProps = entry.data;
+const { Content } = await entry.render();
+---
+
+<DisclosureDoc {...docProps}>
+  <Content />
+</DisclosureDoc>

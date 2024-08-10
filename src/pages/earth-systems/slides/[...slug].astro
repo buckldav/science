@@ -1,0 +1,40 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const dir = "earth-systems/";
+  const entries = await getCollection("slides", ({ slug }) => {
+    return slug.startsWith(dir);
+  });
+  return entries.map((slides) => ({
+    params: { slug: slides.slug.slice(dir.length) },
+    props: slides,
+  }));
+}
+type Props = CollectionEntry<"slides">;
+
+const slides = Astro.props;
+---
+
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href={`/node_modules/reveal.js/dist/theme/${slides.data.theme}.css`}
+    />
+    <title>{slides.data.title}</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown>
+          <textarea data-template>{slides.body}</textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="@/lib/reveal.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/react/Header";
+import Footer from "@/components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Astronomy"
+      description="Mr. Buckley's Astronomy class at Merit Preparatory Academy"
+    />
+  </head>
+  <body>
+    <Header client:only="react" />
+    <main>Astronomy</main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,327 @@
+[
+  {
+    "quote": "The most exciting phrase to hear in science, the one that heralds new discoveries, is not 'Eureka!' (I found it!) but 'That's funny ...'",
+    "author": "Isaac Asimov",
+    "dates": "1920 - 1992"
+  },
+  {
+    "quote": "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.",
+    "author": "Albert Einstein",
+    "dates": "1879 - 1955"
+  },
+  {
+    "quote": "You cannot teach a man anything; you can only find it within yourself.",
+    "author": "Galileo Galilei",
+    "dates": "1564 - 1642"
+  },
+  {
+    "quote": "Entia non sunt multiplicanda praeter necessitatem.  (It is vain to do with more what can be done with less. -- Ockham's Razor.)",
+    "author": "Ockham of Surrey, Oxford scholar in the Order of the Fransiscan Friars",
+    "dates": "~1300-1349"
+  },
+  {
+    "quote": "In science one tries to tell people, in such a way as to be understood by everyone, something that no one ever knew before. But in poetry, it's the exact opposite.",
+    "author": "Paul Dirac",
+    "dates": "1902 - 1984"
+  },
+  {
+    "quote": "Skeptical scrutiny is the means, in both science and religion, by which deep insights can be winnowed from deep nonsense.",
+    "author": "Carl Sagan",
+    "dates": "1934 - 1996"
+  },
+  {
+    "quote": "The important thing in science is not so much to obtain new facts as to discover new ways of thinking about them.",
+    "author": "Sir William Lawrence Bragg",
+    "dates": "1890 - 1971"
+  },
+  {
+    "quote": "In questions of science, the authority of a thousand is not worth the humble reasoning of a single individual.",
+    "author": "Galileo Galilei",
+    "dates": "1564 - 1642"
+  },
+  {
+    "quote": "That's not right.  That's not even wrong.",
+    "author": "Wolfgang Pauli",
+    "dates": "1900 - 1958"
+  },
+  {
+    "quote": "An experiment is a question which science poses to Nature and a measurement is the recording of Nature's answer.",
+    "author": "Max Planck",
+    "dates": "1858 - 1947"
+  },
+  {
+    "quote": "In Einstein's theory of relativity the observer is a man who sets out in quest of truth armed with a measuring-rod. In quantum theory he sets out with a sieve.",
+    "author": "Sir Arthur Eddington",
+    "dates": "1882 - 1944"
+  },
+  {
+    "quote": "Anyone who is not shocked by quantum theory has not understood it.",
+    "author": "Niels H. D. Bohr",
+    "dates": "1885 - 1962"
+  },
+  {
+    "quote": "The reward of the young scientist is the emotional thrill of being the first person in the history of the world to see something or to understand something. Nothing can compare with that experience. The reward of the old scientist is the sense of having seen a vague sketch grow into a masterly landscape.",
+    "author": "Cecilia Payne-Gaposchkin",
+    "dates": "1900 - 1979"
+  },
+  {
+    "quote": "In physics, you don't have to go around making trouble for yourself - nature does it for you.",
+    "author": "Frank Wilczek",
+    "dates": "1951 -"
+  },
+  {
+    "quote": "Science is the only self-correcting human institution, but it also is a process that progresses only by showing itself to be wrong.",
+    "author": "Allan Sandage",
+    "dates": "1926 - 2010"
+  },
+  {
+    "quote": "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+    "author": "Marie Curie",
+    "dates": "1867 - 1934"
+  },
+  {
+    "quote": "Gravitation cannot be held responsible for people falling in love. How on earth can you explain in terms of chemistry and physics so important a biological phenomenon as first love? Put your hand on a stove for a minute and it seems like an hour. Sit with that special girl for an hour and it seems like a minute. That's relativity.",
+    "author": "Albert Einstein",
+    "dates": "1879 - 1955"
+  },
+  {
+    "quote": "In many cases, people who win a Nobel prize, their work slows down after that because of the distractions. Yes, fame is rewarding, but it's a pity if it keeps you from doing the work you are good at.",
+    "author": "Charles H. Townes",
+    "dates": "1915 - 2015"
+  },
+  {
+    "quote": "Astronomy compels the soul to look upwards and leads us from this world to another.",
+    "author": "Plato",
+    "dates": "427 BC - 347 BC"
+  },
+  {
+    "quote": "Science is a way of thinking much more than it is a body of knowledge.",
+    "author": "Carl Sagan",
+    "dates": "1934 - 1996"
+  },
+  {
+    "quote": "Measure what can be measured, and make measurable what cannot be measured.",
+    "author": "Galileo Galilei",
+    "dates": "1564 - 1642"
+  },
+  {
+    "quote": "Today's scientists have substituted mathematics for experiments, and they wander off through equation after equation, and eventually build a structure which has no relation to reality.",
+    "author": "Nikola Tesla",
+    "dates": "1856 - 1943"
+  },
+  {
+    "quote": "Equations are just the boring part of mathematics. I attempt to see things in terms of geometry.",
+    "author": "Stephen Hawking",
+    "dates": "1942 - 2018"
+  },
+  {
+    "quote": "Mathematics is the language in which God has written the universe.",
+    "author": "Galileo Galilei",
+    "dates": "1564 - 1642"
+  },
+  {
+    "quote": "A ship in port is safe, but that is not what ships are for. Sail out to sea and do new things.",
+    "author": "Grace Hopper",
+    "dates": "1906 - 1992"
+  },
+  {
+    "quote": "The most important discoveries will provide answers to questions that we do not yet know how to ask and will concern objects we have not yet imagined.",
+    "author": "John N. Bahcall",
+    "dates": "1934 - 2005"
+  },
+  {
+    "quote": "There was a blithe certainty that came from first comprehending the full Einstein field equations, arabesques of Greek letters clinging tenuously to the page, a gossamer web. They seemed insubstantial when you first saw them, a string of squiggles. Yet to follow the delicate tensors as they contracted, as the superscripts paired with subscripts, collapsing mathematically into concrete classical entities-- potential; mass; forces vectoring in a curved geometry-- that was a sublime experience. The iron fist of the real, inside the velvet glove of airy mathematics.",
+    "author": "Gregory Benford",
+    "dates": "1941 -"
+  },
+  {
+    "quote": "A scientist is happy, not in resting on his attainments, but in the steady acquisition of fresh knowledge.",
+    "author": "Max Planck",
+    "dates": "1858 - 1947"
+  },
+  {
+    "quote": "Science is built up of facts, as a house is built of stones; but an accumulation of facts is no more science than a heap of stones a house.",
+    "author": "Jules-Henri Poincare",
+    "dates": "1854 - 1912"
+  },
+  {
+    "quote": "Somewhere, something incredible is waiting to be known.",
+    "author": "Carl Sagan",
+    "dates": "1934 - 1996"
+  },
+  {
+    "quote": "Equipped with his five senses, man explores the universe around him and calls the adventure Science.",
+    "author": "Edwin P. Hubble",
+    "dates": "1889 - 1953"
+  },
+  {
+    "quote": "In theory, there is no difference between theory and practice. But, in practice, there is.",
+    "author": "Jan L. A. van de Snepscheut",
+    "dates": "1953 - 1994"
+  },
+  {
+    "quote": "Mathematics began to seem too much like puzzle solving. Physics is puzzle solving, too, but of puzzles created by nature, not by the mind of man.",
+    "author": "Maria Goeppert-Mayer",
+    "dates": "1906 - 1972"
+  },
+  {
+    "quote": "I do not feel obliged to believe that the same God who has endowed us with sense, reason, and intellect has asked us to forgo their use.",
+    "author": "Galileo Galilei",
+    "dates": "1564 - 1642"
+  },
+  {
+    "quote": "I have done a terrible thing, I have postulated a particle that cannot be detected.",
+    "author": "Wolfgang Pauli",
+    "dates": "1900 - 1958"
+  },
+  {
+    "quote": "Science is as corruptible a human activity as any other.",
+    "author": "Michael Crichton",
+    "dates": "1942 - 2008"
+  },
+  {
+    "quote": "If you thought that science was certain -- well, that is just an error on your part.",
+    "author": "Richard P. Feynman",
+    "dates": "1918 - 1988"
+  },
+  {
+    "quote": "Science is a way of thinking much more than it is a body of knowledge.",
+    "author": "Carl Sagan",
+    "dates": "1934 - 1996"
+  },
+  {
+    "quote": "Science has been seriously retarded by the study of what is not worth knowing and of what is not knowable.",
+    "author": "Johann Wolfgang von Goethe",
+    "dates": "1749 - 1832"
+  },
+  {
+    "quote": "Much public thinking follows a rut. The same thing is true in science. People get stuck and don't look in other directions.",
+    "author": "Charles H. Townes",
+    "dates": "1915 - 2015"
+  },
+  {
+    "quote": "All humans are brothers. They came from the same supernova.",
+    "author": "Allan Sandage",
+    "dates": "1926 - 2010"
+  },
+  {
+    "quote": "We can't help it. Life looks for life.",
+    "author": "Carl Sagan",
+    "dates": "1934 - 1996"
+  },
+  {
+    "quote": "Science is what we understand well enough to explain to a computer. Art is everything else we do.",
+    "author": "Donald Knuth",
+    "dates": "1938 - "
+  },
+  {
+    "quote": "Science is the attempt to make the chaotic diversity of our sense-experience correspond to a logically uniform system of thought.",
+    "author": "Albert Einstein",
+    "dates": "1879 - 1955"
+  },
+  {
+    "quote": "Physics is not a religion. If it were, we'd have a much easier time raising money.",
+    "author": "Leon M. Lederman",
+    "dates": "1922 - 2018"
+  },
+  {
+    "quote": "We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.",
+    "author": "Carl Sagan",
+    "dates": "1934 - 1996"
+  },
+  {
+    "quote": "The opposite of a correct statement is a false statement. But the opposite of a profound truth may well be another profound truth.",
+    "author": "Neils H. D. Bohr",
+    "dates": "1885 - 1962"
+  },
+  {
+    "quote": "It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.",
+    "author": "Sir Francis Darwin",
+    "dates": "1848 - 1925"
+  },
+  {
+    "quote": "Lectures which really teach will never be popular; lectures which are popular will never really teach.",
+    "author": "Michael Faraday",
+    "dates": "1791 - 1867"
+  },
+  {
+    "quote": "The truth may be puzzling. It may take some work to grapple with. It may be counterintuitive. It may contradict deeply held prejudices. It may not be sconsonant with what we desperately want to be true. But our preferences do not determine what's true.",
+    "author": "Carl Sagan",
+    "dates": "1934 - 1996"
+  },
+  {
+    "quote": "Do not undertake a scientific career in quest of fame or money. There are easier and better ways to reach them. Undertake it only if nothing else will satisfy you; for nothing else is probably what you will receive. Your reward will be the widening of the horizon as you climb. And if you achieve that reward you will ask no other.",
+    "author": "Cecilia Payne-Gaposchkin",
+    "dates": "1900 - 1979"
+  },
+  {
+    "quote": "We must not wait for things to come, believing that they are decided by irrescindable destiny. If we want it, we must do something about it.",
+    "author": "Erwin Schrodinger",
+    "dates": "1887 - 1961"
+  },
+  {
+    "quote": "True religion is real living; living with all one's soul, with all one's goodness and righteousness.",
+    "author": "Albert Einstein",
+    "dates": "1879 - 1955"
+  },
+  {
+    "quote": "We can lick gravity, but sometimes the paperwork is overwhelming.",
+    "author": "Wernher von Braun",
+    "dates": "1912 - 1977"
+  },
+  {
+    "quote": "If all of mathematics disappeared, physics would be set back by exactly one week.",
+    "author": "Richard P. Feynman",
+    "dates": "1918 - 1988"
+  },
+  {
+    "quote": "The scientist does not study nature because it is useful; he studies it because he delights in it, and he delights in it because it is beautiful. If nature were not beautiful, it would not be worth knowing, and if nature were not worth knowing, life would not be worth living.",
+    "author": "Jules-Henri Poincare",
+    "dates": "1854 - 1912"
+  },
+  {
+    "quote": "Life is like riding a bicycle, in order to keep your balance, you must keep moving.",
+    "author": "Albert Einstein",
+    "dates": "1879 - 1955"
+  },
+  {
+    "quote": "In science, the credit goes to the man who convinces the world, not to the man to whom the idea occurs.",
+    "author": "Sir Francis Darwin",
+    "dates": "1848 - 1925"
+  },
+  {
+    "quote": "There are a thousand ways to get a problem wrong -- not all of them bad -- and many ways to get a problem right -- not all of them good.",
+    "author": "David J. Griffiths",
+    "dates": "1942 - "
+  },
+  {
+    "quote": "Great spirits have always encountered violent opposition from mediocre minds.",
+    "author": "Albert Einstein",
+    "dates": "1879 - 1955"
+  },
+  {
+    "quote": "The optimist thinks this is the best of all possible worlds, and the pessimist knows it is.",
+    "author": "J. Robert Oppenheimer",
+    "dates": "1904 - 1967"
+  },
+  {
+    "quote": "Any new fact or insight that I may have found has not seemed to me as a 'discovery' of mine, but rather something that has always been there and that I had chanced to pick up.",
+    "author": "P. V. Subrahmanyan Chandrasekhar",
+    "dates": "1910 - 1995"
+  },
+  {
+    "quote": "Nothing is too wonderful to be true.",
+    "author": "Michael Faraday",
+    "dates": "1791 - 1867"
+  },
+  {
+    "quote": "In order to make an apple pie from scratch, you must first create the universe.",
+    "author": "Carl Sagan",
+    "dates": "1934 - 1996"
+  },
+  {
+    "quote": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything in a miracle.",
+    "author": "Albert Einstein",
+    "dates": "1879 - 1955"
+  }
+]
