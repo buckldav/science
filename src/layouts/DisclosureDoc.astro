@@ -13,6 +13,7 @@ import { CollectionEntry } from "astro:content";
 // const description = "Disclosure";
 type Props = CollectionEntry<"disclosure">["data"];
 
+const og = `/og${Astro.url.pathname}.png`;
 const { title, description, fees, fieldWork } = Astro.props;
 ---
 
@@ -65,7 +66,7 @@ const { title, description, fees, fieldWork } = Astro.props;
         }
       }
     </style>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} image={og} />
   </head>
   <body>
     <main class="container-lg prose dark:prose-invert content">

@@ -1,0 +1,52 @@
+---
+import { linkClasses } from "@/lib/utils";
+import { SITE_TITLE } from "@/consts";
+import { MobileSheet, MenuIcon } from "@/components/react/Header";
+import { ModeToggle } from "./react/ModeToggle";
+const links = [
+  {
+    href: "/astronomy",
+    text: "Astronomy",
+  },
+  {
+    href: "/earth-systems",
+    text: "Earth Systems",
+  },
+  {
+    href: "/physics",
+    text: "Physics",
+  },
+  {
+    href: "/about",
+    text: "About Mr. B",
+  },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky bg-white dark:bg-black top-0 z-50 w-full shadow">
+  <div class="container flex h-12 items-center justify-between px-4 md:px-6">
+    <div class="flex items-center gap-4">
+      <a href="/" class="flex items-center gap-2 uppercase font-bold">
+        {SITE_TITLE}
+      </a>
+    </div>
+    <nav class="hidden sm:flex items-center gap-4">
+      {
+        links.map((link) => {
+          return (
+            <a href={link.href} class={linkClasses(currentPath, link.href)}>
+              {link.text}
+            </a>
+          );
+        })
+      }
+      <ModeToggle client:only="react" />
+    </nav>
+    <MobileSheet links={links} client:only="react" />
+  </div>
+</header>
+<div class={`bg-black bg-cover bg-center`}>
+  <slot />
+</div>

@@ -1,0 +1,35 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import AboutImg from "@/components/react/AboutImg";
+import { TypographyP } from "@/components/ui/typography";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="About Mr. Buckley"
+      description="Bio for Mr. David Buckley at Merit Preparatory Academy"
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="min-h-[70vh]">
+      <article class="grid sm:grid-cols-[50px_1fr] items-start gap-x-12">
+        <AboutImg client:load />
+        <TypographyP classes={["mt-0"]}>
+          David Buckley graduated from BYU in 2018 and has been at Merit ever
+          since. He is certified in CS and Physics Education, and currently
+          teaches Astronomy, Earth Systems, and Physics. Buckley is a veteran
+          coach, heading the Merit boys' cross country team in the fall and
+          co-ed Ultimate Frisbee team in the spring. He also moonlights as the
+          COO and Lead Developer at SpringMicro Software where he does
+          full-stack web development and DevOps.
+        </TypographyP>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>
