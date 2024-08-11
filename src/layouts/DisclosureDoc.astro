@@ -12,8 +12,7 @@ import { CollectionEntry } from "astro:content";
 // const title = "Disclosure";
 // const description = "Disclosure";
 type Props = CollectionEntry<"disclosure">["data"];
-
-const og = `/og${Astro.url.pathname}.png`;
+const og = `/og${Astro.url.pathname}.png`.replace("/.png", ".png");
 const { title, description, fees, fieldWork } = Astro.props;
 ---
 
