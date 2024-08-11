@@ -13,7 +13,7 @@ import { CollectionEntry } from "astro:content";
 // const description = "Disclosure";
 type Props = CollectionEntry<"disclosure">["data"];
 const og = `/og${Astro.url.pathname}.png`.replace("/.png", ".png");
-const { title, description, fees, fieldWork } = Astro.props;
+const { title, description, fees, fieldWork, materials } = Astro.props;
 ---
 
 <!doctype html>
@@ -28,51 +28,38 @@ const { title, description, fees, fieldWork } = Astro.props;
         text-wrap: no-wrap;
         font-size: 0.75rem;
       }
-      body {
-        --tw-prose-headings: 0 0 0%;
-      }
       @media print {
+        html *,
+        html.dark *,
+        html.light * {
+          color: #000 !important;
+        }
+
         body {
           background: white;
         }
 
-        /* h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p {
-          color: #000 !important;
-        } */
-
-        /* Reset margins and padding */
-        @page {
-          margin: 0;
+        .prose {
+          width: 100%;
+          max-width: 100%;
+          font-size: 0.8rem;
         }
 
-        body {
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          transform: scale(1); /* Default scale */
-          transform-origin: top left;
-          font-size: 10pt;
-        }
-
-        h1 {
-          margin-top: 0 !important;
+        .page-break {
+          page-break-before: always;
         }
       }
     </style>
     <BaseHead title={title} description={description} image={og} />
   </head>
   <body>
-    <main class="container-lg prose dark:prose-invert content">
+    <main
+      class="container-lg prose dark:prose-invert print:prose-h1:mt-0 print:prose-h2:mt-0 print:prose-h3:mt-0 print:prose-h4:mt-0 print:prose-p:mt-0"
+    >
       <TypographyH1 classes={["text-center", "mb-0"]}>
         {title}
       </TypographyH1>
-      <TypographyP classes={["text-center"]}>
+      <TypographyP classes={["text-center", "print:mb-0"]}>
         {description}
         <br />
         <span
@@ -84,8 +71,7 @@ const { title, description, fees, fieldWork } = Astro.props;
       </TypographyP>
       <slot />
       <TypographyH3>Grading</TypographyH3>
-      <TypographyP
-        >This class adheres to the letter grading scale adopted here at Merit
+      <TypographyP>This class adheres to the letter grading scale adopted here at Merit
         Academy.
       </TypographyP>
       <table>
@@ -141,7 +127,11 @@ const { title, description, fees, fieldWork } = Astro.props;
           <em>Tests will be open notes.</em>
         </li>
       </ul>
-
+      <div class="page-break"></div>
+      {materials ? (<TypographyH3>Materials to Bring</TypographyH3>
+        <ul class="flex gap-8">
+  {materials.map(m => <li>{m}</li>)}
+        </ul>) : null}
       <TypographyH3>Behavior Expectations</TypographyH3>
       <ul>
         <li>
@@ -205,7 +195,13 @@ const { title, description, fees, fieldWork } = Astro.props;
           </div>
         ))
       }
+      <footer class:list={["hidden", "print:block"]}>
+        <pre>Student Name: __________________________________ &emsp;Parent Signature: ________________________________________
+
+Anything for me to know? __________________________________________________________________________________</pre>
+      </footer>
     </main>
+    
 
     <Footer />
   </body>

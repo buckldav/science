@@ -7,6 +7,7 @@ const disclosure = defineCollection({
     title: z.string(),
     description: z.string(),
     fees: z.string(),
+    materials: z.array(z.string()).optional(),
     fieldWork: z.array(
       z.object({
         location: z.string(),

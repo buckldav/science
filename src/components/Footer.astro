@@ -2,7 +2,7 @@
 const today = new Date();
 ---
 
-<footer>
+<footer id="bottomfooter">
   &copy; {today.getFullYear()}
   <a
     target="_blank"
@@ -74,3 +74,8 @@ const today = new Date();
     transform: scale(1.1);
   }
 </style>
+<script is:inline>
+  if (!!new URLSearchParams(window.location.search).get("embed")) {
+    document.querySelector("#bottomfooter").remove();
+  }
+</script>
