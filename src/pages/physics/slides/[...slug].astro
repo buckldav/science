@@ -1,4 +1,5 @@
 ---
+import SlidesHead from "@/components/SlidesHead.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -19,12 +20,7 @@ const slides = Astro.props;
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
-    <link
-      rel="stylesheet"
-      href={`/node_modules/reveal.js/dist/theme/${slides.data.theme}.css`}
-    />
-    <title>{slides.data.title}</title>
+    <SlidesHead title={slides.data.title} theme={slides.data.theme} />
   </head>
   <body>
     <div class="reveal">

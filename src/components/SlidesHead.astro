@@ -1,0 +1,19 @@
+---
+const {theme, title} = Astro.props;
+---
+
+{import.meta.env.DEV ? (
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+  <link
+    rel="stylesheet"
+    href={`/node_modules/reveal.js/dist/theme/${theme}.css`}
+  />
+  ) : (
+  <link rel="stylesheet" href="/reveal.js/reveal.css" />
+  <link
+    rel="stylesheet"
+    href={`/reveal.js/theme/${theme}.css`}
+  />
+  )
+}
+<title>{title}</title>
