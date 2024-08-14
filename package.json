@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "slides": "cp -rf ./node_modules/reveal.js/dist/theme ./public/reveal.js/",
+    "slides": "cp -rf ./node_modules/reveal.js/dist/theme ./public/reveal.js/ && cp ./node_modules/reveal.js/dist/*.css ./public/reveal.js",
     "preview": "astro preview",
     "astro": "astro"
   },
