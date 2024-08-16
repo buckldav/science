@@ -5,11 +5,11 @@ theme: black
 
 ## Unit 1 Packet
 
-- Day 1: Scientific Method and our Merit Olympics {/* .element: class="fragment" data-fragment-index="1" */}
-- Day 2: Data Collection, Olympics Day! {/* .element: class="fragment" data-fragment-index="2" */}
-- Day 3: Scientific Literacy {/* .element: class="fragment" data-fragment-index="3" */}
-- Day 4: Review & Envelope Lab {/* .element: class="fragment" data-fragment-index="4" */}
-- Day 5: Unit 1 Test & Make up day {/* .element: class="fragment" data-fragment-index="5" */}
+- Day 1: Scientific Method and our Merit Olympics <!-- .element: class="fragment" data-fragment-index="1" -->
+- Day 2: Data Collection, Olympics Day! <!-- .element: class="fragment" data-fragment-index="2" -->
+- Day 3: Scientific Literacy <!-- .element: class="fragment" data-fragment-index="3" -->
+- Day 4: Review & Envelope Lab <!-- .element: class="fragment" data-fragment-index="4" -->
+- Day 5: Unit 1 Test & Make up day <!-- .element: class="fragment" data-fragment-index="5" -->
 
 ---
 
@@ -58,13 +58,13 @@ How would you describe it?
 
 ---
 
-## Where do we start?
+#### Where do we start?
 
 <iframe
   width="960"
   height="540"
   style="margin: 0 auto;"
-  src="https://www.youtube.com/embed/4jk-ZG_m8YA?si=8O6UmwrfC6enUeIC"
+  src="https://www.youtube.com/embed/zFe8eK1aiIU?si=cHiaJjfn-HD_UgwA"
   title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -72,4 +72,5 @@ How would you describe it?
   allowfullscreen
 ></iframe>
 
-NOTES: Independent vs. Dependent Variable
+- NOTES: Independent, Dependent, Control Variables
+- Where are they on the graph?
