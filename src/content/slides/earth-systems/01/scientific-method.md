@@ -39,33 +39,33 @@ What does the "experimentation" step look like for...
 
 #### 1/3 Detailed Steps of the S.M.
 
-1. **Observation**: Begin by observing a phenomenon or a set of facts that lead to a question. <!-- .element: class="fragment" data-fragment-index="1" -->
-2. **Question**: Formulate a clear, concise question based on the observations. <!-- .element: class="fragment" data-fragment-index="2" -->
-3. **Research**: Gather background information to understand the context of the question. <!-- .element: class="fragment" data-fragment-index="3" -->
+1. **Observation**: Begin by observing a phenomenon or a set of facts that lead to a question.
+2. **Question**: Formulate a clear, concise question based on the observations.
+3. **Research**: Gather background information to understand the context of the question.
 
 ---
 
 #### 2/3 Testing the Hypothesis
 
-- **Hypothesis**: Propose a tentative explanation or answer to the question. <!-- .element: class="fragment" data-fragment-index="1" -->
-- **Experiment**: Design and conduct an experiment to test the hypothesis. <!-- .element: class="fragment" data-fragment-index="2" -->
-- **Analysis**: Analyze the data collected during the experiment to draw conclusions. <!-- .element: class="fragment" data-fragment-index="3" -->
+- **Hypothesis**: Propose a tentative explanation or answer to the question.
+- **Experiment**: Design and conduct an experiment to test the hypothesis.
+- **Analysis**: Analyze the data collected during the experiment to draw conclusions.
 
 ---
 
 #### 3/3 Conclusion and Communication
 
-1. **Conclusion**: Determine whether the results support or refute the hypothesis. <!-- .element: class="fragment" data-fragment-index="1" -->
-2. **Communication**: Share the findings with the scientific community. <!-- .element: class="fragment" data-fragment-index="2" -->
-3. **Repetition**: Repeat the experiments to verify results and ensure accuracy. <!-- .element: class="fragment" data-fragment-index="3" -->
+1. **Conclusion**: Determine whether the results support or refute the hypothesis.
+2. **Communication**: Share the findings with the scientific community.
+3. **Repetition**: Repeat the experiments to verify results and ensure accuracy.
 
 ---
 
 ## Importance of the Scientific Method
 
-- The scientific method is not a linear process; it's iterative.
-- It allows for modifications and refinements based on new evidence.
-- It helps ensure that scientific knowledge is reliable and accurate.
+- The scientific method is not a linear process; it's iterative. <!-- .element: class="fragment" data-fragment-index="1" -->
+- It allows for modifications and refinements based on new evidence. <!-- .element: class="fragment" data-fragment-index="2" -->
+- It helps ensure that scientific knowledge is reliable and accurate. <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
@@ -85,3 +85,9 @@ What does the "experimentation" step look like for...
 
 - NOTES: Independent, Dependent, Control Variables
 - Where are they on the graph?
+
+---
+
+## Kahoot
+
+[Link to Kahoot](https://create.kahoot.it/details/8a9ba9ee-1108-4c9b-966d-e5a86853c555)
