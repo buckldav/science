@@ -1,0 +1,33 @@
+---
+import { TypographyH2, TypographyP } from "@/components/ui/typography";
+import { getCollection } from "astro:content";
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+
+const entries = await getCollection("slides");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class:list={["container-lg", "py-4"]}>
+      <TypographyH2>Slides</TypographyH2>
+      <div class="prose dark:prose-invert">
+        <ul>
+          {
+            entries.map((e) => (
+              <li>
+                <a href={e.slug}>{e.data.title}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

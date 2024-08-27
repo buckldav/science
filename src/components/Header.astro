@@ -2,19 +2,19 @@
 import { linkClasses } from "@/lib/utils";
 import { SITE_TITLE } from "@/consts";
 import { MobileSheet, MenuIcon } from "@/components/react/Header";
-import { ModeToggle } from "./react/ModeToggle";
+import { ModeToggle, setDark } from "./react/ModeToggle";
 const links = [
   {
-    href: "/astronomy",
-    text: "Astronomy",
+    href: "/disclosures",
+    text: "Disclosures",
   },
   {
-    href: "/earth-systems",
-    text: "Earth Systems",
+    href: "/labs",
+    text: "Labs",
   },
   {
-    href: "/physics",
-    text: "Physics",
+    href: "/slides",
+    text: "Slides",
   },
   {
     href: "/about",
@@ -54,8 +54,11 @@ const currentPath = Astro.url.pathname;
   <slot />
 </div>
 
-<script is:inline>
+<script>
+  import { setDark } from "./react/ModeToggle";
   if (!!new URLSearchParams(window.location.search).get("embed")) {
+    // @ts-ignore
     document.querySelector("#topheader").remove();
+    setDark();
   }
 </script>

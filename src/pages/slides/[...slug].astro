@@ -3,12 +3,13 @@ import SlidesHead from "@/components/SlidesHead.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const dir = "earth-systems/";
-  const entries = await getCollection("slides", ({ slug }) => {
-    return slug.startsWith(dir);
-  });
+  // const dir = "physics/";
+  const entries = await getCollection("slides");
+  // , ({ slug }) => {
+  //   return slug.startsWith(dir);
+  // });
   return entries.map((slides) => ({
-    params: { slug: slides.slug.slice(dir.length) },
+    params: { slug: slides.slug },
     props: slides,
   }));
 }

@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro";
 // import EnvelopeLab from "@/components/labs/hu";
 import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
 import { Button } from "@/components/ui/button";
+import { TypographyH2, TypographyP } from "@/components/ui/typography";
 ---
 
 <!doctype html>
@@ -15,18 +16,18 @@ import { Button } from "@/components/ui/button";
     <Header />
     <main class:list={["container-lg", "py-4"]}>
       <header class="mb-2">
-        <h1 class="text-2xl mb-2 text-center">Hubble's Law Lab</h1>
-        <p class="mb-2">
+        <TypographyH2>Hubble's Law Lab</TypographyH2>
+        <TypographyP>
           Graph distance of galaxy (x-axis, 0 to 350 Mpc) vs. velocity of galaxy
           (y-axis, -500 to 25,000 km/s)
-        </p>
-        <p class="mb-2">
+        </TypographyP>
+        <TypographyP>
           The slope of the best-fit line will be <strong
             >Hubble's Constant, <i>H<sub>0</sub></i></strong
           >, which represents the rate of expansion of the universe.
-        </p>
+        </TypographyP>
       </header>
-      <div class="flex justify-center mb-4">
+      <div class="flex justify-center my-4">
         <Button>Find A Galaxy</Button>
       </div>
       <div id="galaxy" class="min-h-72"></div>
@@ -38,7 +39,6 @@ import { Button } from "@/components/ui/button";
         >.
       </footer>
     </main>
-
     <script is:inline src="/assets/labs/hubble/index.js"></script>
   </body>
 </html>

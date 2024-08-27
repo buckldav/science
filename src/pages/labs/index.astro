@@ -1,0 +1,38 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+// import EnvelopeLab from "@/components/labs/hu";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import { Button } from "@/components/ui/button";
+import { TypographyH2 } from "@/components/ui/typography";
+const labs = [{ text: "Hubble's Law", href: "/labs/hubble" }];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class:list={["container-lg", "py-4"]}>
+      <TypographyH2>Labs</TypographyH2>
+      <div class="prose dark:prose-invert">
+        <ul>
+          {
+            labs.map((lab) => (
+              <li>
+                <a
+                  class="hover:underline no-underline font-semibold text-orange-500"
+                  href={lab.href}
+                >
+                  {lab.text}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
