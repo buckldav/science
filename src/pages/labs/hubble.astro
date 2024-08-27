@@ -1,0 +1,44 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+// import EnvelopeLab from "@/components/labs/hu";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import { Button } from "@/components/ui/button";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class:list={["container-lg", "py-4"]}>
+      <header class="mb-2">
+        <h1 class="text-2xl mb-2 text-center">Hubble's Law Lab</h1>
+        <p class="mb-2">
+          Graph distance of galaxy (x-axis, 0 to 350 Mpc) vs. velocity of galaxy
+          (y-axis, -500 to 25,000 km/s)
+        </p>
+        <p class="mb-2">
+          The slope of the best-fit line will be <strong
+            >Hubble's Constant, <i>H<sub>0</sub></i></strong
+          >, which represents the rate of expansion of the universe.
+        </p>
+      </header>
+      <div class="flex justify-center mb-4">
+        <Button>Find A Galaxy</Button>
+      </div>
+      <div id="galaxy" class="min-h-72"></div>
+      <footer class="mt-8 mb-4 text-sm">
+        Galaxy data sourced from Wolfram using <a
+          class="hover:underline no-underline font-semibold text-orange-500"
+          href="https://github.com/buckldav/science/tree/master/public/assets/labs/hubble/hubble.nb"
+          >this notebook</a
+        >.
+      </footer>
+    </main>
+
+    <script is:inline src="/assets/labs/hubble/index.js"></script>
+  </body>
+</html>

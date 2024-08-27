@@ -1,0 +1,9 @@
+cKmPerSec = Quantity[299792, "KilometersPerSecond"];
+getStringOrEmpty[str_] := If[StringQ[str], str, ""];
+(* Get galaxy data for 500 galaxies *)
+galaxies = EntityList["Galaxy"][[1;;500]];
+gData = #[{"Name", "Redshift", "DistanceFromEarth", "Image"}] & /@ galaxies;
+(* Convert the redshift to velocity and get the image URL (if available) *)
+gAssociation = Association["name"->#[[1]], "velocity"->ToString[Evaluate[#[[2]] * cKmPerSec]], "distance"->ToString[#[[3]]], "image"->getStringOrEmpty[(MetaInformation /. Options[#[[4]]])["URL"]]] & /@ gData;
+(* Export to JSON *)
+Export["path/to/hubbles-law.json", gAssociation, "JSON", CharacterEncoding -> "ASCII"];

@@ -1,0 +1,24 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import EnvelopeLab from "@/components/labs/envelope";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class:list={["container", "py-4"]}>
+      <EnvelopeLab client:only="react" />
+      <style>
+        td {
+          padding: 0.5em;
+        }
+      </style>
+    </main>
+  </body>
+</html>
