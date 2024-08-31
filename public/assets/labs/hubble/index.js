@@ -3526,15 +3526,15 @@ function getRandomGalaxy() {
   } else {
     galaxyEl.innerHTML = `
     <style>
-table,
-tr,
-td,
-th {
+.table,
+.table tr,
+.table td,
+.table th {
   border: 1px solid #fff;
 }
 
-td,
-th {
+.table td,
+.table th { 
   padding: 4px;
 }
 
@@ -3543,7 +3543,7 @@ img {
 }
     </style>
     <h2 class="text-2xl text-center mb-2">${g.name}</h2>
-    <table style="margin: 1em auto"> 
+    <table style="margin: 1em auto" class="table"> 
       <tr> 
         <th>Distance (x axis)</th>
         <td>${g.distance}</td>

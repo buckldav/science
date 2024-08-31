@@ -4,7 +4,12 @@ import Header from "@/components/Header.astro";
 // import EnvelopeLab from "@/components/labs/hu";
 import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
 import { Button } from "@/components/ui/button";
-import { TypographyH2, TypographyP } from "@/components/ui/typography";
+import { Input } from "@/components/ui/input";
+import {
+  TypographyH2,
+  TypographyH4,
+  TypographyP,
+} from "@/components/ui/typography";
 ---
 
 <!doctype html>
@@ -14,7 +19,7 @@ import { TypographyH2, TypographyP } from "@/components/ui/typography";
   </head>
   <body>
     <Header />
-    <main class:list={["container-lg", "py-4"]}>
+    <main class:list={["container-lg", "py-4", "mb-24"]}>
       <header class="mb-2">
         <TypographyH2>Hubble's Law Lab</TypographyH2>
         <TypographyP>
@@ -31,7 +36,42 @@ import { TypographyH2, TypographyP } from "@/components/ui/typography";
         <Button>Find A Galaxy</Button>
       </div>
       <div id="galaxy" class="min-h-72"></div>
+      <form id="hconstantform">
+        <TypographyH4>Calculate Slope Using Two Galaxies</TypographyH4>
+        <TypographyP
+          >Calculate Hubble's Constant with this slope calculator. Type in data
+          for two galaxies and click "Calculate."</TypographyP
+        >
+        <table class="mb-2">
+          <thead>
+            <tr><th></th><th>X</th><th>Y</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Galaxy 1</td>
+              <td>
+                <Input name="x1" type="number" />
+              </td>
+              <td>
+                <Input name="y1" type="number" />
+              </td>
+            </tr>
+            <tr>
+              <td>Galaxy 2</td>
+              <td>
+                <Input name="x2" type="number" />
+              </td>
+              <td>
+                <Input name="y2" type="number" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <Button type="submit">Calculate Hubble's Constant</Button>
+        <TypographyP id="hconstant" classes={["font-mono"]}>&nbsp;</TypographyP>
+      </form>
       <footer class="mt-8 mb-4 text-sm">
+        <TypographyH4>Sources</TypographyH4>
         Galaxy data sourced from Wolfram using <a
           class="hover:underline no-underline font-semibold text-orange-500"
           href="https://github.com/buckldav/science/tree/master/public/assets/labs/hubble/hubble.nb"
@@ -39,6 +79,20 @@ import { TypographyH2, TypographyP } from "@/components/ui/typography";
         >.
       </footer>
     </main>
+    <script>
+      const hconstantform: HTMLFormElement =
+        document.querySelector("#hconstantform")!;
+      const hconstantp = document.querySelector("#hconstant")!;
+
+      hconstantform.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const data = new FormData(hconstantform);
+        const jdata: any = Object.fromEntries(data.entries());
+        const hc =
+          Math.abs(jdata.y2 - jdata.y1) / Math.abs(jdata.x2 - jdata.x1);
+        hconstantp.innerHTML = `Your Value: ${hc.toFixed(2)}`;
+      });
+    </script>
     <script is:inline src="/assets/labs/hubble/index.js"></script>
   </body>
 </html>

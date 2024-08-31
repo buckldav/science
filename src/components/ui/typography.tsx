@@ -84,10 +84,11 @@ export function TypographyH5({
 
 export function TypographyP({
   children,
+  id,
   classes = [],
-}: React.PropsWithChildren<{ classes?: string[] }>) {
+}: React.PropsWithChildren<{ id?: string; classes?: string[] }>) {
   return (
-    <p className={cn("leading-7 [&:not(:first-child)]:mt-6", classes)}>
+    <p id={id} className={cn("leading-7 [&:not(:first-child)]:mt-6", classes)}>
       {children}
     </p>
   );
