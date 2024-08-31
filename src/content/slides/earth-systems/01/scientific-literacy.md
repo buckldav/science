@@ -1,6 +1,7 @@
 ---
 title: Scientific Literacy
 theme: dracula
+tags: ["Earth Systems", "Intro", "Physics"]
 ---
 
 ## Scientific Literacy

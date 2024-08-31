@@ -1,6 +1,7 @@
 ---
 title: Scientific Method
 theme: black
+tags: ["Earth Systems", "Intro", "Physics"]
 ---
 
 ## Unit 1 Packet
