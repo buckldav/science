@@ -12,7 +12,7 @@ tags: ["Earth Systems"]
 
 ---
 
-![fundamental forces](/assets/slides/fundamentalforces.gif)
+<img src="/assets/slides/fundamentalforces.gif" style="margin: 0 auto; display: block; height: 100vh">
 
 ---
 
