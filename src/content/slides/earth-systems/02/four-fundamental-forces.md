@@ -27,7 +27,7 @@ tags: ["Earth Systems"]
 
 ### Video: Neutron Stars
 
-Where do we see the 4 fundamental forces in neutron stars?
+Where do we see the 4 forces in neutron stars?
 
 <iframe style="margin: 0 auto; display: block;" width="940" height="560" src="https://www.youtube.com/embed/udFxKZRyQt4?si=Kn0c_4xC_fXtAdtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -35,6 +35,6 @@ Where do we see the 4 fundamental forces in neutron stars?
 
 ### Extra Video: Solar Storms
 
-Where do we see the 4 fundamental forces in solar storms?
+Where do we see the 4 forces in solar storms?
 
 <iframe style="margin: 0 auto; display: block;" width="940" height="560" src="https://www.youtube.com/embed/oHHSSJDJ4oo?si=qRlAnsL9WXU-Vbwy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
