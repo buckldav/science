@@ -80,9 +80,11 @@ Molecules in stars ABSORB certain wavelengths of light depending on their CHEMIS
 
 ### Observation
 
-- The EXPECTED wavelength of Hydrogen Alpha (which is red) is OBSERVED to be shifted for different galaxies in the night sky. <!-- .element: class="fragment" data-fragment-index="1" -->
+- The EXPECTED wavelength of Hydrogen Alpha (which is red) is OBSERVED to be redder for different galaxies in the night sky. <!-- .element: class="fragment" data-fragment-index="1" -->
 - We call this phenomenon a COSMOLOGICAL REDSHIFT. <!-- .element: class="fragment" data-fragment-index="2" -->
 - Edwin Hubble identified this phenomenon when observing nearby galaxies. <!-- .element: class="fragment" data-fragment-index="3" -->
+
+<img src="/assets/slides/redshift.jpg" style="margin: 1rem auto; display: block;">
 
 ---
 
