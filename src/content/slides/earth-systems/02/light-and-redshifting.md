@@ -118,7 +118,7 @@ Molecules in stars ABSORB certain wavelengths of light depending on their CHEMIS
 
 ---
 
-### Conclusions About the Universe
+### Conclusions About the Universe (#3 on the Canvas Lab)
 
 - Every galaxy is moving apart from each other. <!-- .element: class="fragment" data-fragment-index="1" -->
 - The space between them is increasing. <!-- .element: class="fragment" data-fragment-index="2" -->
