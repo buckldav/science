@@ -94,6 +94,14 @@ Molecules in stars ABSORB certain wavelengths of light depending on their CHEMIS
 
 ---
 
-#### What Theories Can We Draw About the Universe?
+### Conclusions About the Universe
 
-<iframe  width="960" height="540" style="margin: 0 auto;" src="https://www.youtube.com/embed/zmrbjp-GDfk?si=oylqBsmQCvSc9AcT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+- Every galaxy is moving apart from each other. <!-- .element: class="fragment" data-fragment-index="1" -->
+- The space between them is increasing. <!-- .element: class="fragment" data-fragment-index="2" -->
+- The universe is expanding. <!-- .element: class="fragment" data-fragment-index="3" -->
+
+---
+
+### Extra Video
+
+<iframe width="940" height="560" style="display: block; margin: 0 auto;" src="https://www.youtube.com/embed/9DrBQg_n2Uo?si=BfWe0feKRljGy4yt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
