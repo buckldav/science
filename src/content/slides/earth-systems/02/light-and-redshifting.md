@@ -106,11 +106,23 @@ Molecules in stars ABSORB certain wavelengths of light depending on their CHEMIS
 
 ---
 
+### Hubble's Constant Lab in Canvas
+
+1. Write the value of Hubble's Constant that you found.
+2. Edwin Hubble's value in 1929 was 500 (km/s)/Mpc. The modern accepted value is about 67 (km/s)/Mpc.
+3. ...next slides
+
+---
+
+<iframe width="940" height="560" style="margin: 0 auto; display: block;" src="https://www.youtube.com/embed/LE_wbOw39Mk?si=P5KKGWYsLToiVWDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 ### Conclusions About the Universe
 
 - Every galaxy is moving apart from each other. <!-- .element: class="fragment" data-fragment-index="1" -->
 - The space between them is increasing. <!-- .element: class="fragment" data-fragment-index="2" -->
-- The universe is expanding. <!-- .element: class="fragment" data-fragment-index="3" -->
+- The universe is expanding at a rate of about 67 (km/s)/Mpc. <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
