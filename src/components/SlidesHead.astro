@@ -22,4 +22,7 @@ const {theme, title} = Astro.props;
     margin: 0 auto !important;
     display: block;
   }
+  .katex-display, .katex-display>.katex, .katex-display>.katex>.katex-html {
+    display: unset !important; 
+  }
 </style>
