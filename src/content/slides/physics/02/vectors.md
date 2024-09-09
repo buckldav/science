@@ -20,6 +20,13 @@ NOTE: We will not be using the mathematical notation shown in the video.
 
 ---
 
+### Vectors and Scalars
+
+- A **scalar** is a quantity. Example: I have 5 apples.
+- A **vector** is has a magnitude and direction. Example: 20 mph travelling northeast.
+
+---
+
 ### Components of Vector
 
 A 2D vector `$$ \vec{a} $$` is made up of an x-component `$$ a_x $$` and a y-component `$$ a_y $$`.
