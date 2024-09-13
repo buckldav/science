@@ -69,6 +69,12 @@ We'll simplify the notation of the equations.
 
 ---
 
+### Instantaneous velocity
+
+`$$ v = at $$`
+
+---
+
 ### Acceleration due to gravity
 
 `$$ g = 9.81 \frac{m} {s^2} $$`
