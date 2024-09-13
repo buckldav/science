@@ -12,7 +12,7 @@ tags: ["Physics"]
 
 ## Vectors
 
-NOTE: We will not be using the mathematical notation shown in the video.
+> NOTE: We will not be using the mathematical notation shown in the video.
 
 ---
 
