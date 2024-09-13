@@ -51,6 +51,14 @@ A change is represented with the Greek capital delta
 
 ---
 
+### Instantaneous velocity
+
+`$$ v = at $$`
+
+Where `a` is acceleration.
+
+---
+
 ### Acceleration is a change in velocity
 
 `$$ \Delta \vec a = \frac{\Delta \vec v} {\Delta t} $$`
@@ -66,12 +74,6 @@ We'll simplify the notation of the equations.
 `$$ v = \frac{x} {t} $$`
 
 `$$ a = \frac{v} {t} $$`
-
----
-
-### Instantaneous velocity
-
-`$$ v = at $$`
 
 ---
 
@@ -94,3 +96,9 @@ In this equation, `y` is the vertical displacement fallen.
 ### Free fall equation solve for time
 
 `$$ t = \sqrt \frac{2y} {g} $$`
+
+---
+
+### Example problem:
+
+A guy named Grapenuts falls 235 meters off a cliff in the Grand Canyon. How long (in seconds) until splat?
