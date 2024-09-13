@@ -15,6 +15,8 @@ theme: black
 
 Treasure Hunt lab: Total distance traveled from A to B to C to D etc...
 
+It's a scalar!
+
 ---
 
 ### How far and what direction?
@@ -30,6 +32,8 @@ It's a vector!
 ### How fast?
 
 **Speed** is a measurement of how fast something is moving. Change in distance over time: `$$ s = \frac{d} {t} $$`
+
+It's a scalar!
 
 ---
 
