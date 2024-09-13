@@ -41,7 +41,9 @@ It's a vector!
 
 (x final minus x initial)
 
-It's a vector!
+It's a vector! Units:
+
+`$$ \frac{m} {s} $$`
 
 ---
 
