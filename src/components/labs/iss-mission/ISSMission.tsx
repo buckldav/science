@@ -4,164 +4,71 @@ import { TypographyH2, TypographyH3 } from "@/components/ui/typography";
 import React from "react";
 import { useForm } from "react-hook-form";
 
-// https://en.wikipedia.org/wiki/Specific_impulse
-// https://en.wikipedia.org/wiki/Liquid_rocket_propellant
-const G0 = 9.80665;
-// https://spaceimpulse.com/2023/06/13/how-much-does-rocket-fuel-cost/#NASA_Space_Shuttle
-// https://www.reddit.com/r/RealSolarSystem/comments/1c4gqbe/hydrolox_vs_kerolox/
-// KSP w/Real Solar System mod
+// http://waterocket.explorer.free.fr/pdf/holland2005LU3.PDF
+// P = Po + 1/2 rho v^2
+// solve for v
+// pressure in bars (metric) or PSI (imperial)
+const ve = (p_bottle: number, imperial?: boolean) => {
+  const PSI_TO_BAR = 14.50377;
+  const BAR_TO_PA = 100000;
+  const p_atm = 1.01325;
+  if (!!imperial) {
+    p_bottle /= PSI_TO_BAR;
+  }
+  const rho_water = 1000; // kg/m3
+  const delta_p = Math.abs(p_bottle * BAR_TO_PA - p_atm * BAR_TO_PA);
+  console.log("delta_p", delta_p);
+  return Math.sqrt((2 * delta_p) / rho_water);
+};
 
-// https://www.spacex.com/vehicles/falcon-9/
-const massOfRocket = 549054; // kg, payloads are between 4,000 and 22,800 kg
-const massOfSaturnV = 2.966 * Math.pow(10, 6);
-// escape velocity
-const escapeVelocity = 11180; // m/s
-
-const models = [
-  {
-    name: "Paper Rocket With Combustable Engine",
-    ve: 400,
-    m_rocket: 23, // g
-    m_engine: 17,
-    m_initial: 40,
-    m_fuel: 5,
-  },
-  {
-    name: "2-Liter Soda Bottle Rocket",
-    ve: 400,
-    m_rocket: null,
-    m_engine: null,
-    m_initial: null,
-    m_fuel: null,
-  },
-];
-
-const engines = [
-  {
-    name: "Space Shuttle Solid Rocket Booster",
-    ve: 2500,
-    href: "https://en.wikipedia.org/wiki/Space_Shuttle_Solid_Rocket_Booster#Propellant",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/SpaceShuttIeSRBs.png/450px-SpaceShuttIeSRBs.png",
-  },
-  {
-    name: "Liquid oxygen-liquid hydrogen",
-    ve: 4400,
-    href: "https://ntrs.nasa.gov/api/citations/20160008869/downloads/20160008869.pdf",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/SpaceShuttIeSRBs.png/450px-SpaceShuttIeSRBs.png",
-  },
-  {
-    name: "NSTAR electrostatic xenon ion thruster",
-    ve: 30000,
-    href: "",
-  },
-];
+const deltaV = (
+  volume_mL: number,
+  massRocket_g: number,
+  p_bottle: number,
+  imperial?: boolean
+) => {
+  const rho_water = 1; // g / mL
+  const massFuel_g = rho_water * volume_mL;
+  const massInitial_g = massRocket_g + massFuel_g;
+  const exhaustV = ve(p_bottle, imperial);
+  console.log("exhaust", exhaustV);
+  return exhaustV * Math.log(massInitial_g / massRocket_g);
+};
 
 const EngineForm = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
-  } = useForm();
-  const [deltaV, setDeltaV] = React.useState<null | number>(null); // State to store delta-v
+  } = useForm({
+    defaultValues: {
+      fuelVolume: 0,
+      massRocket: 0,
+      pressureBottle: 0,
+    },
+  });
 
   const onSubmit = (data) => {
-    const selectedModel = models.find((e) => e.name === data.model);
-    if (selectedModel === undefined) {
-      setDeltaV(null);
-      return;
-    }
-    const payloadMass = parseFloat(data.payloadMass);
-    const fuelMass = parseFloat(data.fuelMass);
-    const ve = selectedModel.ve;
-
-    if (payloadMass > 0 && fuelMass > 0) {
-      const m_i = payloadMass + fuelMass + massOfRocket;
-      const m_f = payloadMass + massOfRocket;
-      // Tsiolkovsky rocket equation: Δv = ve * ln(m_i / m_f)
-      const deltaV = ve * Math.log(m_i / m_f);
-      setDeltaV(deltaV);
-    } else {
-      setDeltaV(null);
-      alert(
-        "Please ensure Payload mass is greater than Fuel mass, and both are positive."
-      );
-    }
+    console.log(data);
+    console.log(errors);
+    console.log(
+      deltaV(
+        parseFloat(data.fuelVolume),
+        parseFloat(data.massRocket),
+        parseFloat(data.pressureBottle),
+        true
+      )
+    );
   };
 
-  const selectedModel = watch("model");
-
   return (
-    <div className="flex gap-4 mt-16">
+    <div>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <TypographyH3 classes={["mt-8", "mb-8"]}>Model Rocket</TypographyH3>
-        {models.map((model, index) => (
-          <div key={index}>
-            <input
-              type="radio"
-              id={model.name}
-              value={model.name}
-              {...register("model", {
-                required: true,
-                disabled: true,
-                value: "Paper Rocket With Combustable Engine",
-              })}
-            />
-            <label htmlFor={model.name}>{model.name}</label>
-          </div>
-        ))}
-
-        {errors.model && <p>Please select a model rocket type.</p>}
-
-        <div>
-          <label>Payload Mass (kg)</label>
-          <Input
-            type="number"
-            {...register("payloadMass", { required: true, min: 1 })}
-            placeholder="Payload Mass"
-          />
-          {errors.payloadMass && (
-            <p>Payload mass is required and must be positive.</p>
-          )}
-        </div>
-
-        <div>
-          <label>Fuel Mass (kg)</label>
-          <Input
-            type="number"
-            {...register("fuelMass", { required: true, min: 1 })}
-            placeholder="Fuel Mass"
-          />
-          {errors.fuelMass && (
-            <p>Fuel mass is required and must be positive.</p>
-          )}
-        </div>
-
-        <Button type="submit">Calculate Delta-v</Button>
+        <Input type="number" {...register("fuelVolume")} />
+        <Input type="number" {...register("massRocket")} />
+        <Input type="number" {...register("pressureBottle")} />
+        <Button type="submit">Calculate</Button>
       </form>
-      <div>
-        {/* {selectedEngine && (
-          <div>
-            <TypographyH3>Selected Engine Details</TypographyH3>
-            <img
-              src={engines.find((e) => e.name === selectedEngine)?.img}
-              alt={selectedEngine}
-              className="max-h-48"
-            />
-            <p>
-              <a href={engines.find((e) => e.name === selectedEngine)?.href}>
-                More Info
-              </a>
-            </p>
-          </div>
-        )} */}
-
-        {deltaV !== null && (
-          <div>
-            <h3>Calculated Delta-v: {deltaV.toFixed(2)} m/s</h3>
-          </div>
-        )}
-      </div>
     </div>
   );
 };

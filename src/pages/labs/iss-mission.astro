@@ -1,0 +1,32 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+// import EnvelopeLab from "@/components/labs/hu";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  TypographyH2,
+  TypographyH4,
+  TypographyP,
+} from "@/components/ui/typography";
+import ISSMission from "@/components/labs/iss-mission/ISSMission";
+import REqSVG from "@/components/labs/iss-mission/rocket-equation.svg?raw";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class:list={["container-lg", "py-4", "mb-24"]}>
+      <header class="mb-2">
+        <TypographyH2>ISS Space Mission Lab</TypographyH2>
+      </header>
+      <Fragment set:html={REqSVG} />
+      <ISSMission client:only="react" />
+    </main>
+  </body>
+</html>

@@ -94,6 +94,10 @@ Molecules in stars ABSORB certain wavelengths of light depending on their CHEMIS
 
 ---
 
+<iframe src="https://www.youtube.com/shorts/NGYL9B8OlnA?app=desktop" width="940" height="560" style="margin: 0 auto; display: block;"></iframe>
+
+---
+
 ### Galaxies Redshift When Moving Away
 
 <iframe src="https://javalab.org/en/doppler_effect_and_redshift_en/" width="940" height="560" style="margin: 0 auto; display: block;"></iframe>
