@@ -186,7 +186,7 @@ Made up of 3 eras: Paleozoic, Mesozoic, Cenozoic.
 
 - Humans
 
-<img src="/assets/slides/huamns.jpg" style="height: 60vh; margin: 0 auto; display: block;">
+<img src="/assets/slides/humans.jpg" style="height: 60vh; margin: 0 auto; display: block;">
 
 ---
 
