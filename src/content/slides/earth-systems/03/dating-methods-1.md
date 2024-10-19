@@ -4,6 +4,10 @@ theme: night
 tags: ["Earth Systems", "Unit 3"]
 ---
 
+### Dating Methods 1
+
+---
+
 #### Why are there so many Jurassic Dinosaur Fossils in Utah?
 
 <img src="/assets/slides/jurassic.png" style="margin: 0 auto; display: block;">
