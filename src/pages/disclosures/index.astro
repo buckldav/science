@@ -10,6 +10,20 @@ const disclosures = [
   { text: "Earth Systems", href: "/disclosures/earth-systems" },
   { text: "Physics", href: "/disclosures/physics" },
 ];
+const scopes = [
+  {
+    text: "Astronomy",
+    href: "https://docs.google.com/spreadsheets/d/1Uh4aWx7r4hvYreqEZ0JqIZx7EbZrysf5pAKQE43ljCU/edit?gid=0#gid=0",
+  },
+  {
+    text: "Earth Systems",
+    href: "https://docs.google.com/spreadsheets/d/1Uh4aWx7r4hvYreqEZ0JqIZx7EbZrysf5pAKQE43ljCU/edit?gid=612281687#gid=612281687",
+  },
+  {
+    text: "Physics",
+    href: "https://docs.google.com/spreadsheets/d/1Uh4aWx7r4hvYreqEZ0JqIZx7EbZrysf5pAKQE43ljCU/edit?gid=1135142711#gid=1135142711",
+  },
+];
 ---
 
 <!doctype html>
@@ -27,6 +41,26 @@ const disclosures = [
             disclosures.map((d) => (
               <li>
                 <a
+                  class="hover:underline no-underline font-semibold text-orange-500"
+                  href={d.href}
+                >
+                  {d.text}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <br />
+      <TypographyH2>Scope and Sequence Spreadsheets</TypographyH2>
+      <div class="prose dark:prose-invert">
+        <ul>
+          {
+            scopes.map((d) => (
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="hover:underline no-underline font-semibold text-orange-500"
                   href={d.href}
                 >
