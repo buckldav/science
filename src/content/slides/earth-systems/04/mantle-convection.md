@@ -8,6 +8,12 @@ tags: ["Earth Systems", "Unit 4"]
 
 ---
 
+#### Continental Drift Puzzle Answer
+
+<img src="/assets/slides/pangea.png" style="height: 80vh; margin: 0 auto; display: block;">
+
+---
+
 #### What is Convection?
 
 Heat transfer in a gas or liquid by the circulation of **currents** from one region to another.
