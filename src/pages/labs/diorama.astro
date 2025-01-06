@@ -1,0 +1,147 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+// import EnvelopeLab from "@/components/labs/hu";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  TypographyH2,
+  TypographyH4,
+  TypographyP,
+} from "@/components/ui/typography";
+import { google } from "googleapis";
+import fs from "fs";
+import DioramaLabelGen from "@/components/labs/diorama";
+import {
+  KEY_EMAIL,
+  KEY_PIN,
+  hasCredsKeys,
+} from "@/components/labs/diorama/util";
+
+let sheetData: any[] | null = null;
+
+try {
+  const base64Key = import.meta.env.GOOGLE_SERVICE_ACCOUNT_KEY;
+
+  if (!base64Key) {
+    throw new Error("Missing GOOGLE_SERVICE_ACCOUNT_KEY environment variable");
+  }
+
+  // Decode the base64 string back to JSON
+  const credentials = JSON.parse(
+    Buffer.from(base64Key, "base64").toString("utf8")
+  );
+  // Load service account key file
+  //const keyFile = './merit-academy-334604-325f16ed3b40.json';
+
+  // Define the scope
+  const scopes = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
+
+  // Authenticate using the service account
+  const auth = new google.auth.GoogleAuth({
+    credentials,
+    scopes,
+  });
+
+  // Initialize the Sheets API
+  const sheets = google.sheets({ version: "v4", auth });
+
+  async function accessGoogleSheet() {
+    try {
+      // Replace with your Google Sheet ID
+      const spreadsheetId = "1JyU3kWzxbkUtaI2oHg9fXLQZlmxJeMRQtNtCQxFIprM";
+      const range = "Form Responses 1!A1:S100"; // Adjust the range as needed
+
+      // Get data from the Google Sheet
+      const response = await sheets.spreadsheets.values.get({
+        spreadsheetId,
+        range,
+      });
+      const data = response.data.values;
+      if (data) {
+        // transform data from rows to objects
+        const keys = data[0];
+        const rows = data.slice(1);
+        const customPinLongKey =
+          "Custom PIN #, for accessing your results to print labels. Can be any number that you can remember (e.g. student ID).";
+        sheetData = rows.map((values) => {
+          const obj = Object.assign(
+            {},
+            ...keys.map((key, index) => ({ [key]: values[index] }))
+          );
+          obj[KEY_PIN] = parseInt(obj[customPinLongKey]);
+          delete obj[customPinLongKey];
+          return obj;
+        });
+      }
+    } catch (error) {
+      console.error("Error accessing Google Sheet:", error);
+    }
+  }
+
+  await accessGoogleSheet();
+} catch (e) {
+  console.log(e);
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style is:global>
+      @media print {
+        #topheader {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main class:list={["container-lg", "py-4", "mb-24"]}>
+      <header class="mb-2">
+        <TypographyH2>Earth Systems Diorama Lab</TypographyH2>
+        <div id="diorama-wrapper">
+          <DioramaLabelGen sheetData={sheetData} client:only="react" />
+        </div>
+        <script is:inline>
+          let creds = sessionStorage.getItem("creds");
+          const KEY_PIN = "PIN";
+          const KEY_EMAIL = "Email Address";
+
+          function hasCredsKeys(creds) {
+            return (
+              creds && creds[KEY_EMAIL] && Number.isInteger(creds[KEY_PIN])
+            );
+          }
+
+          while (!hasCredsKeys(creds)) {
+            if (creds === null) {
+              const email = window
+                .prompt("Please enter your email.")
+                ?.toString();
+              if (!email) break;
+              creds = {
+                [KEY_EMAIL]: email,
+              };
+            } else if (!Number.isInteger(creds[KEY_PIN])) {
+              try {
+                creds[KEY_PIN] = parseInt(
+                  window.prompt("Please enter your PIN.")
+                );
+              } catch (e) {
+                alert("Not a number, please refresh to try again.");
+                break;
+              }
+            }
+          }
+
+          if (creds !== null)
+            sessionStorage.setItem("creds", JSON.stringify(creds));
+        </script>
+      </header>
+    </main>
+  </body>
+</html>
