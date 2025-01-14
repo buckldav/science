@@ -28,8 +28,8 @@ The rotation of the Earth causes swirlies.
 
 #### Draw the ocean currents
 
-- Counter-clockwise in the Northern Hemisphere.
-- Clockwise in the Southern Hemisphere.
+- Clockwise in the Northern Hemisphere.
+- Counter-clockwise in the Southern Hemisphere.
 - Check your drawing on the next slide.
 
 ---
