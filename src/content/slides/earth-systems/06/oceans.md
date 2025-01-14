@@ -36,19 +36,19 @@ The rotation of the Earth causes swirlies.
 
 #### The ocean currents
 
-<img src="/assets/slides/ocean-currents.png" alt="ocean currents." height="70vh">
+<img src="/assets/slides/ocean-currents.png" alt="ocean currents." style="height: 70vh; margin: 0 auto; display: block;">
 
 ---
 
 #### Where is the water warm or cold?
 
-<img src="/assets/slides/ocean-temp.png" alt="ocean temperature." height="70vh">
+<img src="/assets/slides/ocean-temp.png" alt="ocean temperature." style="height: 70vh; margin: 0 auto; display: block;">
 
 ---
 
 #### Rising ocean temperatures
 
-<img src="/assets/slides/ocean-temp-graph.png" alt="ocean temperature graph." height="70vh">
+<img src="/assets/slides/ocean-temp-graph.png" alt="ocean temperature graph." style="height: 70vh; margin: 0 auto; display: block;">
 
 <cite>Data source: NOAA, 2024</cite>
 
