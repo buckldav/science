@@ -46,6 +46,12 @@ The rotation of the Earth causes swirlies.
 
 ---
 
+#### Extra: What would happen if the Earth stopped rotating?
+
+<iframe width="960" height="405" src="https://www.youtube.com/embed/gp5G1QG6cXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
 #### Rising ocean temperatures
 
 <img src="/assets/slides/ocean-temp-graph.png" alt="ocean temperature graph." style="height: 70vh; margin: 0 auto; display: block;">
