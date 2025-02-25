@@ -54,4 +54,12 @@ Surface reflectivity
 
 ---
 
+<img src="/assets/slides/3-7/albedo-globes.jpg" style="display: block; margin: 0 auto; height: 70vh;">
+
+<small>
+<a href="https://mynasadata.larc.nasa.gov/basic-page/albedo-values">Source: NASA</a>
+</small>
+
+---
+
 <img src="/assets/slides/3-7/albedo-table.png" style="display: block; margin: 0 auto; height: 80vh;">
