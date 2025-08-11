@@ -128,7 +128,7 @@ const { title, description, fees, fieldWork, materials } = Astro.props;
         </li>
       </ul>
       <div class="page-break"></div>
-      {materials ? (<TypographyH3>Materials to Bring</TypographyH3>
+      {materials && materials.length > 0 ? (<TypographyH3>Materials to Bring</TypographyH3>
         <ul class="flex gap-8">
   {materials.map(m => <li>{m}</li>)}
         </ul>) : null}
@@ -145,8 +145,7 @@ const { title, description, fees, fieldWork, materials } = Astro.props;
           class. Zero-tolerance.
         </li>
         <li>
-          Hall pass usage is now tracked school-wide. Be honest about what you
-          need (bathroom, locker, etc.).
+          Hall pass usage - one at a time, 10 minutes at most. More than 10 minutes counts as a sluff.
         </li>
         <li>Classroom Values</li>
         <ol>
@@ -168,12 +167,12 @@ const { title, description, fees, fieldWork, materials } = Astro.props;
       </ul>
       <TypographyH3> Course Fees </TypographyH3>
       <TypographyP>{fees}</TypographyP>
-      <TypographyH4>Optional Field Work</TypographyH4>
+{fieldWork.length > 0 ? (<TypographyH4>Optional Field Work</TypographyH4>
       <TypographyP
         >Part of the student experience at Merit Academy is field work, where
         students have meaningful learning experiences outside the class room.
         These are optional experiences and the dates are to be determined.</TypographyP
-      >
+>) : null}
       {
         fieldWork.map((item) => (
           <div>

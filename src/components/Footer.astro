@@ -26,24 +26,14 @@ const today = new Date();
         height="48"
       />
     </a>
-    {
-      Astro.url.pathname.startsWith("/astronomy") ? (
-        <a href="/astronomy" title="Astronomy">
-          <span class="sr-only">Astronomy</span>
-          🚀
-        </a>
-      ) : Astro.url.pathname.startsWith("/earth-systems") ? (
-        <a href="/earth-systems" title="Earth Systems">
-          <span class="sr-only">Earth Systems</span>
-          🌋
-        </a>
-      ) : (
-        <a href="/physics" title="Physics">
-          <span class="sr-only">Physics</span>
-          ⚛️
-        </a>
-      )
-    }
+    <a 
+      href="https://cs.dbuckley.dev" 
+      target="_blank"
+      title="Learn CS with Mr. Buckley (external link)"
+    >
+      <span class="sr-only">Learn CS</span>
+      🖳
+    </a>
   </div>
 </footer>
 <style>
