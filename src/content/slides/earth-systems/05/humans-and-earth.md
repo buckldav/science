@@ -43,7 +43,7 @@ tags: ["Earth Systems", "Unit 5"]
 
 #### Example Spawn Point: Hawaii
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N4La_MeE8jM?si=LcIBv5xz-Sk243Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="display: block; margin: 0 auto" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N4La_MeE8jM?si=LcIBv5xz-Sk243Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="display: block; margin: 0 auto" allowfullscreen></iframe>
 
 ---
 
@@ -61,4 +61,4 @@ tags: ["Earth Systems", "Unit 5"]
 
 What are the advantages and disadvantages to this spawn point?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cN2Ysk6WTxI?si=0dAp-NEaqPLunBze" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="display: block; margin: 0 auto" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cN2Ysk6WTxI?si=0dAp-NEaqPLunBze" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="display: block; margin: 0 auto" allowfullscreen></iframe>

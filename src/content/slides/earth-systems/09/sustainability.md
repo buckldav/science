@@ -1,5 +1,5 @@
 ---
-title: Sustainability 
+title: Sustainability
 theme: night
 tags: ["Earth Systems", "Unit 9"]
 ---
@@ -34,7 +34,7 @@ Renewable and Non-Renewable Resource Sorting
 
 #### Application: City Planning
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ViJIJh-BNq8?si=4eeBwnuBoVgVV5PE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ViJIJh-BNq8?si=4eeBwnuBoVgVV5PE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
 
 ---
 

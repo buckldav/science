@@ -43,7 +43,7 @@ Each of these cities is located at 37 degrees N latitude, with westerly winds.
 
 ---
 
-<iframe src="https://youtube.com/embed/hek1hn27xdw?si=oIfOVftvgMOMnYmJ" width="800" style="margin: 0 auto; display: block;" height="640"></iframe>
+<iframe src="https://youtube-nocookie.com/embed/hek1hn27xdw?si=oIfOVftvgMOMnYmJ" width="800" style="margin: 0 auto; display: block;" height="640"></iframe>
 
 ---
 

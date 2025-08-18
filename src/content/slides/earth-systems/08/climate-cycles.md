@@ -16,11 +16,11 @@ Today, we are talking about the carbon cycle.
 
 ---
 
-<iframe src="https://youtube.com/embed/qKY7AN3tB_s" width="800" style="margin: 0 auto; display: block;" height="640"></iframe>
+<iframe src="https://youtube-nocookie.com/embed/qKY7AN3tB_s" width="800" style="margin: 0 auto; display: block;" height="640"></iframe>
 
 ---
 
-<iframe src="https://youtube.com/embed/A4cPmHGegKI" width="800" style="margin: 0 auto; display: block;" height="640"></iframe>
+<iframe src="https://youtube-nocookie.com/embed/A4cPmHGegKI" width="800" style="margin: 0 auto; display: block;" height="640"></iframe>
 
 ---
 

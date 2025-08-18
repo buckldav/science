@@ -47,4 +47,4 @@ li { font-size: 2rem;  }
 
 You know the compositional layers of the Earth like crust, mantle, and core, but what about the _mechanical_ layers of the Earth?
 
-<iframe style="margin: 0 auto; display: block;" width="560" height="315" src="https://www.youtube.com/embed/6RKoLleyDJ4?si=_F7rIDYi42jVxDn7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="margin: 0 auto; display: block;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/6RKoLleyDJ4?si=_F7rIDYi42jVxDn7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

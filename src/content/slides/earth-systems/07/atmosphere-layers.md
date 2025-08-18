@@ -12,13 +12,13 @@ tags: ["Earth Systems", "Unit 7"]
 
 Moving air is lower pressure than stationary air.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/A7KBeEjIzxE?si=CzII6V4vYonFfdt_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/A7KBeEjIzxE?si=CzII6V4vYonFfdt_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
 #### How do airplanes generate lift?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p4VHMsIuPmk?si=bbgKLK6-5hgcCIZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p4VHMsIuPmk?si=bbgKLK6-5hgcCIZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
@@ -30,7 +30,7 @@ Moving air is lower pressure than stationary air.
 
 ### 2. High and Low Pressure Systems
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DquXO2FEl0Q?si=nF1Y9FrBMDXRdkzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DquXO2FEl0Q?si=nF1Y9FrBMDXRdkzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 

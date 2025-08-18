@@ -16,7 +16,7 @@ tags: ["Physics"]
 
 ---
 
-<iframe width="940" height="560"  style="display: block; margin: 0 auto;" src="https://www.youtube.com/embed/ml4NSzCQobk?si=g27ZfyfjCwsCZ7ZP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="940" height="560"  style="display: block; margin: 0 auto;" src="https://www.youtube-nocookie.com/embed/ml4NSzCQobk?si=g27ZfyfjCwsCZ7ZP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 

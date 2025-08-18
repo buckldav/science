@@ -33,7 +33,7 @@ tags: ["Earth Systems", "Unit 4"]
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/02_V3PCJVxk?si=hw5CdMqUIh90lK7-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 0 auto; display: block;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/02_V3PCJVxk?si=hw5CdMqUIh90lK7-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 0 auto; display: block;"></iframe>
 
 ---
 

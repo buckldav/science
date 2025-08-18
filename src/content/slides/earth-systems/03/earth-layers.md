@@ -18,7 +18,7 @@ Electromagnetic Force
 
 #### What's in the earth's core?
 
-<iframe style="margin: 0 auto; display: block;" width="560" height="315" src="https://www.youtube.com/embed/XXTEWQdu3aE?si=dO2A7zruCtHHOSeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="margin: 0 auto; display: block;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/XXTEWQdu3aE?si=dO2A7zruCtHHOSeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
@@ -35,7 +35,7 @@ Electromagnetic Force
 
 #### Earthquakes and Seismology in Earth's Interior
 
-<iframe style="margin: 0 auto; display: block;" width="560" height="315" src="https://www.youtube.com/embed/Prey5z8WQiU?si=gChY2Kj5y3azKS1a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="margin: 0 auto; display: block;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Prey5z8WQiU?si=gChY2Kj5y3azKS1a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 

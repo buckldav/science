@@ -31,9 +31,9 @@ How would you describe it?
 
 What does the "experimentation" step look like for...
 
-- [Economics](https://www.youtube.com/watch?v=j9ooSSqsB9M)
-- [Engineering Design](https://www.youtube.com/watch?v=uIV031bnmFA)
-- [Psychology](https://www.youtube.com/watch?v=hFV71QPvX2I&t=125s)
+- [Economics](https://www.youtube-nocookie.com/watch?v=j9ooSSqsB9M)
+- [Engineering Design](https://www.youtube-nocookie.com/watch?v=uIV031bnmFA)
+- [Psychology](https://www.youtube-nocookie.com/watch?v=hFV71QPvX2I&t=125s)
 - etc.
 
 ---
@@ -76,7 +76,7 @@ What does the "experimentation" step look like for...
   width="960"
   height="540"
   style="margin: 0 auto;"
-  src="https://www.youtube.com/embed/zFe8eK1aiIU?si=cHiaJjfn-HD_UgwA"
+  src="https://www.youtube-nocookie.com/embed/zFe8eK1aiIU?si=cHiaJjfn-HD_UgwA"
   title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

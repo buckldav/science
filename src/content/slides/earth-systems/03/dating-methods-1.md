@@ -16,7 +16,7 @@ tags: ["Earth Systems", "Unit 3"]
 
 #### The conditions are just right.
 
-<iframe width="940" height="560" style="margin: 0 auto; display: block;" src="https://www.youtube.com/embed/ID7qhn1ipmw?si=xr9iy3YTGDuOoKjj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="940" height="560" style="margin: 0 auto; display: block;" src="https://www.youtube-nocookie.com/embed/ID7qhn1ipmw?si=xr9iy3YTGDuOoKjj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
@@ -35,4 +35,4 @@ tags: ["Earth Systems", "Unit 3"]
 
 #### 4 Ways of Dating
 
-<iframe width="940" height="560" style="margin: 0 auto; display: block;" src="https://www.youtube.com/embed/NFNPmRWDBag?si=p1dXdIoDdtRI398k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="940" height="560" style="margin: 0 auto; display: block;" src="https://www.youtube-nocookie.com/embed/NFNPmRWDBag?si=p1dXdIoDdtRI398k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

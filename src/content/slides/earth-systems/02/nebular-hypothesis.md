@@ -26,7 +26,7 @@ Up to this point, we've discussed the following:
 
 ---
 
-<iframe width="940" height="560" src="https://www.youtube.com/embed/sCkhEu3lYNc?si=hIjSEVouctntlODM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="940" height="560" src="https://www.youtube-nocookie.com/embed/sCkhEu3lYNc?si=hIjSEVouctntlODM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 

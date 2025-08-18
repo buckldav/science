@@ -53,7 +53,7 @@ That's part of why I changed jobs and changed rooms.
 
 #### Geology is all around us (Kate Tectonics)
 
-<iframe src="https://www.youtube.com/embed/KTvsWd4HpAk?si=5z7vdeUBUxKQcvi7" width="940" height="560" style="margin: 0 auto; display: block;"></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/KTvsWd4HpAk?si=5z7vdeUBUxKQcvi7" width="940" height="560" style="margin: 0 auto; display: block;"></iframe>
 
 ---
 

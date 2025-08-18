@@ -30,7 +30,7 @@ Key Topic: How did geology and life on Earth develop and impact each other?
 
 #### Earth's Geologic Timeline
 
-<iframe width="940" height="560" style="margin: 0 auto; display: block;" src="https://www.youtube.com/embed/M8V_glRW1hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="940" height="560" style="margin: 0 auto; display: block;" src="https://www.youtube-nocookie.com/embed/M8V_glRW1hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 

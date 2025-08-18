@@ -94,7 +94,7 @@ Molecules in stars ABSORB certain wavelengths of light depending on their CHEMIS
 
 ---
 
-<iframe src="https://www.youtube.com/shorts/NGYL9B8OlnA?app=desktop" width="940" height="560" style="margin: 0 auto; display: block;"></iframe>
+<iframe src="https://www.youtube-nocookie.com/shorts/NGYL9B8OlnA?app=desktop" width="940" height="560" style="margin: 0 auto; display: block;"></iframe>
 
 ---
 
@@ -118,7 +118,7 @@ Molecules in stars ABSORB certain wavelengths of light depending on their CHEMIS
 
 ---
 
-<iframe width="940" height="560" style="margin: 0 auto; display: block;" src="https://www.youtube.com/embed/LE_wbOw39Mk?si=P5KKGWYsLToiVWDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="940" height="560" style="margin: 0 auto; display: block;" src="https://www.youtube-nocookie.com/embed/LE_wbOw39Mk?si=P5KKGWYsLToiVWDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
@@ -132,4 +132,4 @@ Molecules in stars ABSORB certain wavelengths of light depending on their CHEMIS
 
 ### Extra Video
 
-<iframe width="940" height="560" style="display: block; margin: 0 auto;" src="https://www.youtube.com/embed/9DrBQg_n2Uo?si=BfWe0feKRljGy4yt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="940" height="560" style="display: block; margin: 0 auto;" src="https://www.youtube-nocookie.com/embed/9DrBQg_n2Uo?si=BfWe0feKRljGy4yt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

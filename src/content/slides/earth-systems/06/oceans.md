@@ -16,7 +16,7 @@ How they impact the Earth's atmosphere, biosphere, and geosphere.
 
 Do the toilets drain the opposite direction in the southern hemisphere?
 
-<iframe width="960" height="405" src="https://www.youtube.com/embed/mXaad0rsV38?si=PHRrvGo2rPXfDKNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="960" height="405" src="https://www.youtube-nocookie.com/embed/mXaad0rsV38?si=PHRrvGo2rPXfDKNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
@@ -48,7 +48,7 @@ The rotation of the Earth causes swirlies.
 
 #### Extra: What would happen if the Earth stopped rotating?
 
-<iframe width="960" height="405" src="https://www.youtube.com/embed/gp5G1QG6cXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="960" height="405" src="https://www.youtube-nocookie.com/embed/gp5G1QG6cXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
