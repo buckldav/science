@@ -27,32 +27,9 @@ How would you describe it?
 
 ---
 
-#### Different "Experiments"
+How would you apply the scientific method to an engineering problem?
 
-What does the "experimentation" step look like for...
-
-- [Economics](https://www.youtube-nocookie.com/watch?v=j9ooSSqsB9M)
-- [Engineering Design](https://www.youtube-nocookie.com/watch?v=uIV031bnmFA)
-- [Psychology](https://www.youtube-nocookie.com/watch?v=hFV71QPvX2I&t=125s)
-- etc.
-
----
-
-#### 1/3 Detailed Steps of the S.M.
-
-1. **Observation**: Begin by observing a phenomenon or a set of facts that lead to a question.
-2. **Question**: Formulate a clear, concise question based on the observations.
-3. **Research**: Gather background information to understand the context of the question.
-
----
-
-#### 2/3 Testing the Hypothesis
-
-- **Hypothesis**: Propose a tentative explanation or answer to the question.
-- **Experiment**: Design and conduct an experiment to test the hypothesis.
-- **Analysis**: Analyze the data collected during the experiment to draw conclusions.
-
----
+## <iframe width="560" height="315" src="https://www.youtube.com/embed/dmSyrGsqmg8?si=5hHGxhI0siG4VB61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### 3/3 Conclusion and Communication
 
