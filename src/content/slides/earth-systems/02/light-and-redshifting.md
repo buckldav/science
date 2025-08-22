@@ -1,7 +1,7 @@
 ---
 title: Light and Redshifting
 theme: blood
-tags: ["Earth Systems"]
+tags: ["Earth Systems", "Unit 2"]
 ---
 
 ## How Do Astronomers Know What They Know?
@@ -94,7 +94,7 @@ Molecules in stars ABSORB certain wavelengths of light depending on their CHEMIS
 
 ---
 
-<iframe src="https://www.youtube-nocookie.com/shorts/NGYL9B8OlnA?app=desktop" width="940" height="560" style="margin: 0 auto; display: block;"></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/NGYL9B8OlnA" width="940" height="560" style="margin: 0 auto; display: block;"></iframe>
 
 ---
 

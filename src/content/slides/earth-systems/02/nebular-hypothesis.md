@@ -1,7 +1,7 @@
 ---
 title: Nebular Hypothesis
 theme: black
-tags: ["Earth Systems", "Astronomy"]
+tags: ["Earth Systems", "Unit 2"]
 ---
 
 ## Nebular Hypothesis

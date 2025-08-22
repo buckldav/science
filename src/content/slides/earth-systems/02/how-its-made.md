@@ -1,7 +1,7 @@
 ---
 theme: simple
 title: How It's Made
-tags: ["Earth Systems"]
+tags: ["Earth Systems", "Unit 2"]
 ---
 
 ## How It's Made
