@@ -18,7 +18,7 @@ tags: ["Earth Systems", "Unit 2"]
 
 ### How are things made?
 
-<iframe style="margin: 0 auto; display: block;" width="940" height="560" src="https://www.youtube-nocookie.com/embed/YDUTOo2tq3k?si=lSGUI39QgdkZGIOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe style="margin: 0 auto; display: block;" width="940" height="560" src="https://www.youtube-nocookie.com/embed/anDBlJM2Rac?si=qF0xZMjQMpL2dRv5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
