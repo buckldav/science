@@ -1,0 +1,210 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+// import EnvelopeLab from "@/components/labs/hu";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import {
+  TypographyH2,
+  TypographyH4,
+  TypographyP,
+} from "@/components/ui/typography";
+const title = `Earth Spawn Point Explorer | ${SITE_TITLE}`
+// most of this page was written by Claude
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={SITE_DESCRIPTION} />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: calc(100vh - 48px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .info {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .info h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .coordinates {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-family: 'Courier New', monospace;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .loading {
+            display: none;
+            color: #667eea;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+    </style>
+ </head>
+  <body>
+    <Header />
+    <article class="wrapper">
+    <div class="container">
+        <h1>🌍 Random Earth Explorer</h1>
+        <p class="subtitle">Discover a random place on Earth</p>
+        
+        <button class="button" onclick="goToRandomLocation()">Take Me Somewhere!</button>
+        
+        <div class="loading" id="loading">
+            <span class="spinner"></span>
+            Finding a random location...
+        </div>
+        
+        <div class="info">
+            <h3>How it works:</h3>
+            <p>Click the button to visit a random location on land anywhere in the world using Google Earth.</p>
+            <p>Each click will generate new coordinates and open them in Google Earth's web interface.</p>
+            <div class="coordinates" id="lastCoords">
+                Click the button to generate coordinates!
+            </div>
+        </div>
+    </div>
+    </article>
+
+    <script is:inline>
+        // Major land areas with approximate boundaries to increase land hit rate
+        const landAreas = [
+            // Africa
+            { minLat: -35, maxLat: 37, minLng: -17, maxLng: 51 },
+            // Europe
+            { minLat: 36, maxLat: 71, minLng: -10, maxLng: 40 },
+            // Asia
+            { minLat: -10, maxLat: 75, minLng: 60, maxLng: 145 },
+            // North America
+            { minLat: 15, maxLat: 71, minLng: -168, maxLng: -52 },
+            // South America
+            { minLat: -55, maxLat: 12, minLng: -81, maxLng: -34 },
+            // Australia
+            { minLat: -44, maxLat: -10, minLng: 113, maxLng: 154 }
+        ];
+
+        function goToRandomLocation() {
+            const loading = document.getElementById('loading');
+            const coordsDisplay = document.getElementById('lastCoords');
+            
+            loading.classList.add('active');
+            
+            // Pick a random land area
+            const area = landAreas[Math.floor(Math.random() * landAreas.length)];
+            
+            // Generate random coordinates within that area
+            const lat = Math.random() * (area.maxLat - area.minLat) + area.minLat;
+            const lng = Math.random() * (area.maxLng - area.minLng) + area.minLng;
+            
+            // Round to 6 decimal places
+            const latitude = lat.toFixed(6);
+            const longitude = lng.toFixed(6);
+            
+            // Update display
+            coordsDisplay.textContent = `Lat: ${latitude}, Lng: ${longitude}`;
+            
+            // Create Google Earth URL
+            const earthUrl = `https://earth.google.com/web/@${latitude},${longitude},0a,10000d,35y,0h,0t,0r`;
+            
+            // Small delay for effect, then open
+            setTimeout(() => {
+                loading.classList.remove('active');
+                window.open(earthUrl, '_blank');
+            }, 800);
+        }
+    </script>
+</body>
+</html>
