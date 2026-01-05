@@ -46,6 +46,30 @@ The rotation of the Earth causes swirlies.
 
 ---
 
+#### Surface vs. Deep Ocean Currents
+
+<iframe width="960" height="405" src="https://www.youtube-nocookie.com/embed/p4pWafuvdrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+#### What causes the currents?
+
+| Location            | Primary Forces for Currents |
+|---------------------|-----------------------------|
+| Surface Coast       | Wind and Tides              |
+| Surface Open Ocean  | Wind                        |
+| Deep Ocean Currents | Density                     |
+
+---
+
+#### Thermohaline Circulation
+
+- Thermo = Heat, Haline = Salt (Halite)
+- Differences in salt and density cause deep ocean currents and heat transfer.
+- The global conveyor belt affects ecosystems and weather patterns because it changes the heat of a place.
+
+---
+
 #### Extra: What would happen if the Earth stopped rotating?
 
 <iframe width="960" height="405" src="https://www.youtube-nocookie.com/embed/gp5G1QG6cXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
