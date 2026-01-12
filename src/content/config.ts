@@ -16,6 +16,7 @@ const disclosure = defineCollection({
         motivation: z.string(),
       })
     ),
+    retakes: z.boolean().optional()
   }),
 });
 

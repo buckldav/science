@@ -13,7 +13,7 @@ import { CollectionEntry } from "astro:content";
 // const description = "Disclosure";
 type Props = CollectionEntry<"disclosure">["data"];
 const og = `/og${Astro.url.pathname}.png`.replace("/.png", ".png");
-const { title, description, fees, fieldWork, materials } = Astro.props;
+const { title, description, fees, fieldWork, materials, retakes } = Astro.props;
 ---
 
 <!doctype html>
@@ -108,7 +108,7 @@ const { title, description, fees, fieldWork, materials } = Astro.props;
       </table>
       <ul>
         <li>Labs and Projects = 50% of grade</li>
-        <li>Tests = 30% of grade</li>
+        <li>Tests and Final Projects = 30% of grade</li>
         <li>All Other Assignments = 20% of grade</li>
       </ul>
       <TypographyH4> Late Work and Resubmissions </TypographyH4>
@@ -118,20 +118,31 @@ const { title, description, fees, fieldWork, materials } = Astro.props;
           Please use this time. There will be no penalty for late assignments or
           assignment resubmissions.
         </li>
+        {retakes ? (
+          <li>
+          For test retakes, you can earn up to 50% of the points back by redoing the
+          questions you missed or turning in the equivalent assignment provided. Most tests
+          will have a short review or equation sheet that you will be allowed to use
+          during the test, so if you prepare well and use the provided resources, you will 
+          do just fine.
+          </li>
+        ) : (
         <li>
           However, <em>tests are non-retakable</em> unless special circumstances
           require it (If you are absent on test day, you can take the test on a different
           day. Testing accommodations in student's IEP still apply). Doing assignments
           promptly will properly prepare you for tests.
-        </li>
+        </li>)}
+        {!retakes ? (
         <li>
           <em>Tests will be open notes.</em>
         </li>
+        ) : <></>}
       </ul>
       <div class="page-break"></div>
       {materials && materials.length > 0 ? (<TypographyH3>Materials to Bring</TypographyH3>
-        <ul class="flex gap-8">
-  {materials.map(m => <li>{m}</li>)}
+        <ul class="flex flex-wrap gap-x-8">
+  {materials.map(m => <li class="my-0">{m}</li>)}
         </ul>) : null}
       <TypographyH3>Behavior Expectations</TypographyH3>
       <ul>
