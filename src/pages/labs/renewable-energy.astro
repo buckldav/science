@@ -1,0 +1,184 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+// import EnvelopeLab from "@/components/labs/hu";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  TypographyH2,
+  TypographyH4,
+  TypographyP,
+} from "@/components/ui/typography";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      #colors td, #colors th {
+        padding: 0.25rem 0.5rem;
+      }
+      #colors {
+        border-width: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main class:list={["container-lg", "py-4", "mb-24"]}>
+      <header class="mb-2">
+        <TypographyH2>Renewable Energy Lab</TypographyH2>
+        <TypographyP>
+          Compare the voltage of the LED you were able to light with the calculated voltage. The result is the efficiency of the power generation.
+        </TypographyP>
+      </header>
+      <table id="colors" class="mb-4">
+        <thead>
+          <tr>
+            <th>Color</th>
+            <th>Voltage Drop at 20 mA</th>
+          </tr>
+        </thead>
+        <tbody class="text-white"> 
+          <tr class="bg-red-600">
+            <td>Red</td>
+            <td>1.8 V</td>
+          </tr>
+          <tr class="bg-orange-600">
+            <td>Orange</td>
+            <td>2.0 V</td>
+          </tr>
+          <tr class="bg-yellow-400 text-slate-900">
+            <td>Yellow</td>
+            <td>2.3 V</td>
+          </tr>
+          <tr class="bg-green-400 text-slate-900">
+            <td>Green</td>
+            <td>3.5 V</td>
+          </tr>
+          <tr class="bg-blue-600">
+            <td>Blue</td>
+            <td>3.6 V</td>
+          </tr>
+          <tr class="bg-white text-slate-900">
+            <td>White</td>
+            <td>4.0 V</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form class="my-4" id="wpform">
+        <TypographyH4>Calculate Wind Power</TypographyH4>
+        <TypographyP>
+          Compare the calculated Voltage with the Voltage of LED.
+        </TypographyP>
+        <table class="my-2">
+          <tbody>
+            <tr>
+              <td>Air Density (&rho;)</td>
+              <td>
+                <Input name="rho" type="number" step="0.01" value="1.2" readOnly />
+              </td>
+              <td>
+                kg/m<sup>3</sup>
+              </td>
+            </tr>
+            <tr>
+              <td>Air Velocity (v)</td>
+              <td>
+                <Input name="v" type="number" step="0.01" value="10" readOnly />
+              </td>
+              <td>
+                m/s
+              </td>
+            </tr>
+            <tr>
+              <td>Power Coefficient (C<sub>p</sub>)</td>
+              <td>
+                <Input name="cp" type="number" step="0.01" value="0.3" readOnly />
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td>Radius of Wind Turbine (r)</td>
+              <td>
+                <Input name="r" type="number" step="0.01" />
+              </td>
+              <td>
+                cm
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <Button type="submit">Calculate Ideal Power</Button>
+        <TypographyP id="wp" classes={["font-mono"]}>&nbsp;</TypographyP>
+      </form>
+      <form class="my-4" id="spform">
+        <TypographyH4>Calculate Solar Power</TypographyH4>
+        <TypographyP
+          >Compare the calculated Voltage with the Voltage of LED.</TypographyP
+        >
+        <table class="my-2">
+          <tbody>
+            <tr>
+              <td>Sun Intensity</td>
+              <td>
+                <Input name="I" type="number" value="1000" readOnly />
+              </td>
+              <td>
+                W/m<sup>2</sup>
+              </td>
+            </tr>
+            <tr>
+              <td>Area</td>
+              <td>
+                <Input name="A" type="number" step="0.01" />
+              </td>
+              <td>
+                cm<sup>2</sup>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <Button type="submit">Calculate Ideal Power</Button>
+        <TypographyP id="sp" classes={["font-mono"]}>&nbsp;</TypographyP>
+      </form>
+      <footer class="mt-8 mb-4 text-sm">
+        <TypographyH4>Sources</TypographyH4>
+        Lab sourced from <a href="https://engineeringtomorrow.org/labs/renewable-energy">Engineering Tomorrow</a>.
+      </footer>
+    </main>
+    <script>
+      const wpform: HTMLFormElement =
+        document.querySelector("#wpform")!;
+      const wpp = document.querySelector("#wp")!;
+
+      wpform.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const data = new FormData(wpform);
+        const jdata: any = Object.fromEntries(data.entries());
+        const ans = 0.5 * jdata.rho * Math.pow(jdata.v, 3) * jdata.cp * Math.PI * Math.pow(jdata.r / 100, 2);
+        const V = ans / 0.02
+        wpp.innerHTML = `Your Value: ${ans.toFixed(2)} Watts<br>
+        Voltage: ${V.toFixed(2)} V`;
+      });
+      const spform: HTMLFormElement =
+        document.querySelector("#spform")!;
+      const spp = document.querySelector("#sp")!;
+
+      spform.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const data = new FormData(spform);
+        const jdata: any = Object.fromEntries(data.entries());
+        const ans = jdata.I * jdata.A / Math.pow(100, 2);
+        const V = ans / 0.02
+        spp.innerHTML = `Your Value: ${ans.toFixed(2)} Watts<br>
+        Voltage: ${V.toFixed(2)} V`;
+      });
+    </script>
+  </body>
+</html>
