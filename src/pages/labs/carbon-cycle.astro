@@ -1,0 +1,418 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+// import EnvelopeLab from "@/components/labs/hu";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  TypographyH2,
+  TypographyH4,
+  TypographyP,
+} from "@/components/ui/typography";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      #colors td,
+      #colors th {
+        padding: 0.25rem 0.5rem;
+      }
+      #colors {
+        border-width: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main class:list={["container-lg", "py-4", "mb-24"]}>
+      <TypographyH2>Carbon Cycle Game</TypographyH2>
+      <TypographyP
+        >This activity is a digitized version of <a
+          href="https://nagt.org/nagt/teaching_resources/teachingmaterials/57695.html"
+          target="_blank"
+          class="hover:underline no-underline font-semibold text-orange-500"
+          >this lesson</a
+        > by Cheryl Manning.</TypographyP
+      >
+      <TypographyH4 classes={["my-4"]}>The Game</TypographyH4>
+      <div id="game" class="flex flex-col gap-2 mb-2"></div>
+      <Button id="next" variant="default">Advance to Next Reservoir</Button>
+      <Button id="changeRound" variant="secondary">Go to Next Round</Button>
+    </main>
+  </body>
+</html>
+
+<script>
+  const atmosphere1 = [
+    [
+      "You have been photosynthesized by a terrestrial plant. Go to Terrestrial Plants.",
+      "Terrestrial Plants",
+    ],
+    [
+      "You have been photosynthesized by a terrestrial plant. Go to Terrestrial Plants.",
+      "Terrestrial Plants",
+    ],
+    [
+      "You diffuse into the surface of the ocean. Go to Ocean’s Surface.",
+      "Ocean's Surface",
+    ],
+    [
+      "You diffuse into the surface of the ocean. Go to Ocean’s Surface.",
+      "Ocean's Surface",
+    ],
+    [
+      "You have been photosynthesized by a cocolithophore (a phytoplankton) in the near surface of the ocean. Go to Marine Biosphere.",
+      "Marine Biosphere",
+    ],
+    [
+      "You have been photosynthesized by blue-green algae in the near surface of the ocean. Go to Marine Biosphere.",
+      "Marine Biosphere",
+    ],
+  ];
+  const atmosphere2 = atmosphere1;
+  const soil1 = [
+    [
+      "You dissolve into the groundwater and are re-precipitated into the fractures of a Rock.",
+      "Rocks",
+    ],
+    [
+      "You dissolve into the groundwater, move into a stream and flow into the Shallow Ocean.",
+      "Ocean's Surface",
+    ],
+    [
+      "You are absorbed by a fungus, which respires you back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "You are absorbed by a bacterium, which respires you back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The molecule you were a part of oxidizes and you diffuse into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The molecule you were a part of oxidizes and you diffuse into the Atmosphere.",
+      "Atmosphere",
+    ],
+  ];
+  const soil2 = [
+    [
+      "You dissolve into the groundwater and are re-precipitated into the fractures of a Rock.",
+      "Rocks",
+    ],
+    [
+      "You dissolve into the groundwater, move into a stream and flow into the Shallow Ocean.",
+      "Rocks",
+    ],
+    [
+      "You are absorbed by a fungus or bacterium, which respires you back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The Soil you are a part of is eroded. The molecule you were a part of oxidizes and you diffuse into the Atmosphere",
+      "Atmosphere",
+    ],
+    [
+      "The Soil you are a part of is eroded. The molecule you were a part of oxidizes and you diffuse into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The molecule you were a part of oxidizes and you diffuse into the Atmosphere.",
+      "Atmosphere",
+    ],
+  ];
+  const oceansSurface1 = [
+    [
+      "You are taken in by a phytoplankton through photosynthesis and the phytoplankton has been eaten by krill.  Go to Marine Biosphere.",
+      "Marine Biosphere",
+    ],
+    [
+      "You are taken in by a phytoplankton through photosynthesis and the phytoplankton has been eaten by a shrimp. Go to Marine Biosphere.",
+      "Marine Biosphere",
+    ],
+    [
+      "The sun is heating the ocean’s waters. You diffuse back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The sun is heating the ocean’s waters. You diffuse back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "You are absorbed by a clam which makes you a part of its shell.  Go to Marine Biosphere.",
+      "Marine Biosphere",
+    ],
+    [
+      "You are absorbed by a coral polyp, go to Marine Biosphere.",
+      "Marine Biosphere",
+    ],
+  ];
+  const oceansSurface2 = oceansSurface1;
+  const marineBiosphere1 = [
+    [
+      "The organism that you are a part of dies and sinks to the bottom of the ocean. Go to Deep Ocean.",
+      "Deep Ocean",
+    ],
+    [
+      "The organism that you are a part of dies and sinks to the bottom of the ocean. Go to Deep Ocean.",
+      "Deep Ocean",
+    ],
+    [
+      "The organism that you are a part of washes up on shore and dies. As it decomposes, you diffuse back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The organism that you are a part of dies in shallow water. As it decomposes, you diffuse back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The organism that you are a part of respires you back into the water. Go to Ocean’s Surface. ",
+      "Ocean's Surface",
+    ],
+    [
+      "The organism that you are a part of respires you back into the water. Go to Ocean’s Surface. ",
+      "Ocean's Surface",
+    ],
+  ];
+  const marineBiosphere2 = marineBiosphere1;
+  const deepOcean1 = [
+    [
+      "You are moved along by deep ocean currents.  Upwelling brings you up to the Ocean’s Surface. ",
+      "Ocean's Surface",
+    ],
+    [
+      "You are moved along by deep ocean currents.  Upwelling brings you up to the Ocean’s Surface. ",
+      "Ocean's Surface",
+    ],
+    [
+      "You become buried with the sediments and remain there for millions of years. You become a Rock.",
+      "Rocks",
+    ],
+    [
+      "You become buried with the sediments and remain there for millions of years. You become a Rock.",
+      "Rocks",
+    ],
+    [
+      "You become buried with the sediments and remain there for millions of years. You become a Rock.",
+      "Rocks",
+    ],
+    [
+      "You become buried with the sediments and become part of a petroleum molecule. Go to Fossil Fuels.",
+      "Fossil Fuels",
+    ],
+  ];
+  const deepOcean2 = deepOcean1;
+  const terrestrialPlants1 = [
+    [
+      "The plant that takes you in respires you back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The plant that takes you in is burned in a forest fire and you go back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The plant that takes you in is eaten by an herbivore, which respires you back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The plant that takes you in dies and begins to decompose.  Go to Soils.",
+      "Soils",
+    ],
+    [
+      "The plant that takes you in dies and begins to decompose.  Go to Soils.",
+      "Soils",
+    ],
+    [
+      "The plant that takes you in falls into a swamp and is buried by mud.  You become coal.  Go to Fossil Fuels.",
+      "Fossil Fuels",
+    ],
+  ];
+  const terrestrialPlants2 = [
+    [
+      "The plant that takes you in respires you back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The plant that takes you in is burned in a forest fire and you go back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The plant that takes you in is eaten by an herbivore, which respires you back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The plant that takes you in dies and begins to decompose.  Go to Soils.",
+      "Soils",
+    ],
+    [
+      "The plant that takes you in is eaten by an omnivore, which respires you back into the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The plant that takes you in is harvested as fuel wood and you go back into the Atmosphere.",
+      "Atmosphere",
+    ],
+  ];
+  const rocks1 = [
+    [
+      "The rocks you are a part of are metamorphosed into marble. Stay at Rocks.  Roll again.",
+      "Rocks",
+    ],
+    [
+      "The rocks you are a part of are subducted at a convergent boundary.  You get trapped in some melt and are erupted from a volcano.  Go to Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The rocks you are a part of are uplifted and eroded.  You are released to the Atmosphere.",
+      "Atmosphere",
+    ],
+    [
+      "The rocks you are a part of are buried. Stay at Rocks and roll again.",
+      "Rocks",
+    ],
+    [
+      "The rocks you are a part of are metamorphosed into marble. Stay at Rocks.  Roll again.",
+      "Rocks",
+    ],
+    [
+      "The rocks you are a part of are buried. Stay at Rocks and roll again.   ",
+      "Rocks",
+    ],
+  ];
+  const rocks2 = rocks1;
+  const fossilFuels1 = [
+    [
+      "The fossil fuels you are a part of are buried. Stay at Fossil Fuels and roll again.",
+      "Fossil Fuels",
+    ],
+    [
+      "The fossil fuels you are a part of are buried. Stay at Fossil Fuels and roll again.",
+      "Fossil Fuels",
+    ],
+    [
+      "The fossil fuels you are a part of are buried. Stay at Fossil Fuels and roll again.",
+      "Fossil Fuels",
+    ],
+    [
+      "The fossil fuels you are a part of are buried. Stay at Fossil Fuels and roll again.",
+      "Fossil Fuels",
+    ],
+    [
+      "The fossil fuels you are a part of are buried. Stay at Fossil Fuels and roll again.",
+      "Fossil Fuels",
+    ],
+    [
+      "The fossil fuels you are a part of are in rocks that are uplifted and exposed.  You are oxidized and released to the Atmosphere.",
+      "Atmosphere",
+    ],
+  ];
+  const fossilFuels2 = [
+    [
+      "The fossil fuels you are a part of are extracted and burned for energy. Go to Atmosphere. ",
+      "Atmosphere",
+    ],
+    [
+      "The fossil fuels you are a part of are extracted and burned for energy. Go to Atmosphere. ",
+      "Atmosphere",
+    ],
+    [
+      "The fossil fuels you are a part of are extracted and burned for energy. Go to Atmosphere. ",
+      "Atmosphere",
+    ],
+    [
+      "The fossil fuels you are a part of are extracted and burned for energy. Go to Atmosphere. ",
+      "Atmosphere",
+    ],
+    [
+      "The fossil fuels you are a part of are buried. Stay at Fossil Fuels and roll again.",
+      "Fossil Fuels",
+    ],
+    [
+      "The fossil fuels you are a part of are in rocks that are uplifted and exposed.  You are oxidized and released to the Atmosphere.",
+      "Atmosphere",
+    ],
+  ];
+  const round1 = {
+    Atmosphere: atmosphere1,
+    "Deep Ocean": deepOcean1,
+    "Fossil Fuels": fossilFuels1,
+    "Marine Biosphere": marineBiosphere1,
+    "Ocean's Surface": oceansSurface1,
+    Rocks: rocks1,
+    Soil: soil1,
+    "Terrestrial Plants": terrestrialPlants1,
+  };
+  const round2 = {
+    Atmosphere: atmosphere2,
+    "Deep Ocean": deepOcean2,
+    "Fossil Fuels": fossilFuels2,
+    "Marine Biosphere": marineBiosphere2,
+    "Ocean's Surface": oceansSurface2,
+    Rocks: rocks2,
+    Soil: soil2,
+    "Terrestrial Plants": terrestrialPlants2,
+  };
+
+  const rounds = [round1, round2];
+
+  const state = {
+    currentRound: -1,
+    currentReservoir: "",
+  };
+
+  const gameDiv = document.getElementById("game")!;
+  const nextButton = document.getElementById("next")!;
+  const roundButton = document.getElementById("changeRound")!;
+
+  function advanceRound() {
+    state.currentRound = (state.currentRound + 1) % 2;
+  }
+
+  function setReservoir() {
+    const reservoirs = Object.keys(rounds[state.currentRound]);
+    const index = Math.floor(Math.random() * reservoirs.length);
+    state.currentReservoir = reservoirs[index];
+  }
+
+  function getDiceRoll() {
+    return Math.floor(Math.random() * 6);
+  }
+
+  function renderGameState() {
+    const [event, nextReservoir] =
+      rounds[state.currentRound][state.currentReservoir][getDiceRoll()];
+    const roundText =
+      state.currentRound === 0
+        ? "Round 1 (before human interference)"
+        : "Round 2 (human interference)";
+    gameDiv.innerHTML = `
+      <p><span class="font-bold">Current Round: </span>${roundText}</p>
+      <p><span class="font-bold">Current Reservoir: </span>${state.currentReservoir}</p>
+      <p><span class="font-bold">What Happened: </span>${event}</p>
+      <br>
+    `;
+    state.currentReservoir = nextReservoir;
+  }
+
+  function startRound() {
+    advanceRound();
+    setReservoir();
+    renderGameState();
+  }
+
+  startRound();
+
+  nextButton.onclick = (e) => {
+    renderGameState();
+  };
+
+  roundButton.onclick = (e) => {
+    startRound();
+  };
+</script>
