@@ -41,3 +41,12 @@ tags: ["Earth Systems", "Unit 8"]
 #### Combustion of Propane
 
 <img src="/assets/slides/3-5/propane.png" width="700" style="display: block; margin: 0 auto">
+
+---
+
+#### Ocean Diffusion
+
+<small>The mixing of water releases carbon (via diffusion) into the atmosphere from the surface. Hot water is faster at this than cold water.</small>
+
+<img src="/assets/slides/ocean-diffusion.jpg" width="700" style="display: block; margin: 0 auto">
+
