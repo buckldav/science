@@ -24,9 +24,9 @@ https://player.vimeo.com/video/904099296
 
 ---
 
-#### Chemistry Time!
+#### Green Hydrogen Production
 
-_Packet_
+<img src="/assets/slides/green-hydrogen.png" alt="Green Hydrogen Production" style="width: 100%; margin: 0 auto; display: block">
 
 ---
 
