@@ -30,6 +30,12 @@ Surface reflectivity
 
 ---
 
+Albedo Experiment Start
+
+<img src="/assets/slides/albedo1.jpeg" style="display: block; margin: 0 auto; height: 60vh;">
+
+---
+
 <small>Glaciers</small>
 
 <img src="/assets/slides/3-7/glacier.png" style="display: block; margin: 0 auto; height: 80vh;">
@@ -44,7 +50,17 @@ Surface reflectivity
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BI1PpDL8y9o?si=eES5HtBHh71c1js9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Albedo Experiment Result
+
+<small>SLOWEST | White, Yellow, Red, Green, Blue, Black | QUICKEST</small>
+
+<img src="/assets/slides/albedo2.jpeg" style="display: block; margin: 0 auto; height: 60vh;">
+
+---
+
+These feedback loops are sensitive!
+
+<iframe style="display: block; margin: 0 auto;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BI1PpDL8y9o?si=eES5HtBHh71c1js9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
